@@ -1,0 +1,1 @@
+normal mongo server

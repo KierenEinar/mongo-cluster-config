@@ -1,0 +1,962 @@
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] MongoDB starting : pid=29025 port=27001 dbpath=/usr/local/mongo-cluster-sharding/shards/node1/data/db 64-bit host=kieren.local
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T13:46:06.895+0800 I CONTROL  [initandlisten] options: { config: "node1/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27001 }, processManagement: { fork: true }, replication: { replSet: "set1" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/shards/node1/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/shards/node1/log/mongodb.log" } }
+2018-02-28T13:46:06.896+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] 
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] 
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] 
+2018-02-28T13:46:08.203+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T13:46:08.948+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/shards/node1/data/db/diagnostic.data'
+2018-02-28T13:46:09.013+0800 I REPL     [initandlisten] Did not find local voted for document at startup.
+2018-02-28T13:46:09.014+0800 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2018-02-28T13:46:09.014+0800 I NETWORK  [thread1] waiting for connections on port 27001
+2018-02-28T13:50:37.563+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:63095 #1 (1 connection now open)
+2018-02-28T13:50:37.566+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:63095 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:01:17.216+0800 I -        [conn1] end connection 127.0.0.1:63095 (1 connection now open)
+2018-02-28T14:03:21.985+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64514 #2 (1 connection now open)
+2018-02-28T14:03:21.986+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:64514 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:03:24.515+0800 I REPL     [conn2] replSetInitiate admin command received from client
+2018-02-28T14:03:24.516+0800 E REPL     [conn2] replSet initiate got InvalidReplicaSetConfig: TypeMismatch: _id field has non-numeric type string for member:{ _id: "1", host: "127.0.0.1:27001" } while parsing { _id: "set1", members: [ { _id: "1", host: "127.0.0.1:27001" }, { _id: "2", host: "127.0.0.1:27002" }, { _id: "3", host: "127.0.0.1:27003" } ], version: 1 }
+2018-02-28T14:04:09.503+0800 I REPL     [conn2] replSetInitiate admin command received from client
+2018-02-28T14:04:09.509+0800 I REPL     [conn2] replSetInitiate config object with 3 members parses ok
+2018-02-28T14:04:09.511+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:27002
+2018-02-28T14:04:09.511+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:27003
+2018-02-28T14:04:09.513+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:27002, took 2ms (1 connections now open to 127.0.0.1:27002)
+2018-02-28T14:04:09.513+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:27003, took 2ms (1 connections now open to 127.0.0.1:27003)
+2018-02-28T14:04:09.515+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64604 #3 (2 connections now open)
+2018-02-28T14:04:09.515+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64605 #4 (3 connections now open)
+2018-02-28T14:04:09.515+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:64604 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:09.515+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:64605 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:09.516+0800 I REPL     [conn2] ******
+2018-02-28T14:04:09.516+0800 I REPL     [conn2] creating replication oplog of size: 192MB...
+2018-02-28T14:04:09.538+0800 I STORAGE  [conn2] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T14:04:09.538+0800 I STORAGE  [conn2] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2018-02-28T14:04:09.538+0800 I STORAGE  [conn2] Scanning the oplog to determine where to place markers for truncation
+2018-02-28T14:04:09.622+0800 I REPL     [conn2] ******
+2018-02-28T14:04:09.767+0800 I INDEX    [conn2] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2018-02-28T14:04:09.767+0800 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-02-28T14:04:09.777+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2018-02-28T14:04:09.777+0800 I COMMAND  [conn2] setting featureCompatibilityVersion to 3.4
+2018-02-28T14:04:09.778+0800 I REPL     [conn2] New replica set config in use: { _id: "set1", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9646597ba5c33fc250a1db') } }
+2018-02-28T14:04:09.778+0800 I REPL     [conn2] This node is 127.0.0.1:27001 in the config
+2018-02-28T14:04:09.778+0800 I REPL     [conn2] transition to STARTUP2
+2018-02-28T14:04:09.778+0800 I REPL     [conn2] Starting replication storage threads
+2018-02-28T14:04:09.778+0800 I REPL     [conn2] Starting replication fetcher thread
+2018-02-28T14:04:09.779+0800 I REPL     [conn2] Starting replication applier thread
+2018-02-28T14:04:09.779+0800 I REPL     [conn2] Starting replication reporter thread
+2018-02-28T14:04:09.779+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:27002 is now in state STARTUP
+2018-02-28T14:04:09.779+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:27003 is now in state STARTUP
+2018-02-28T14:04:09.779+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T14:04:09.779+0800 I COMMAND  [conn2] command local.replset.minvalid appName: "MongoDB Shell" command: replSetInitiate { v: 2, key: { version: 1 }, ns: "admin.system.version", name: "incompatible_with_version_32" } numYields:0 reslen:22 locks:{ Global: { acquireCount: { r: 14, w: 8, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 234 } }, Database: { acquireCount: { r: 2, w: 2, W: 6 } }, Collection: { acquireCount: { r: 2, w: 2 } }, Metadata: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 2 } } } protocol:op_command 275ms
+2018-02-28T14:04:09.780+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T14:04:11.523+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64610 #5 (4 connections now open)
+2018-02-28T14:04:11.523+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64611 #6 (5 connections now open)
+2018-02-28T14:04:11.523+0800 I -        [conn5] end connection 127.0.0.1:64610 (5 connections now open)
+2018-02-28T14:04:11.523+0800 I -        [conn6] end connection 127.0.0.1:64611 (4 connections now open)
+2018-02-28T14:04:12.150+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64616 #7 (4 connections now open)
+2018-02-28T14:04:12.150+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:64616 conn7: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:12.154+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64617 #8 (5 connections now open)
+2018-02-28T14:04:12.154+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:64617 conn8: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:12.156+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64619 #9 (6 connections now open)
+2018-02-28T14:04:12.157+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64618 #10 (7 connections now open)
+2018-02-28T14:04:12.157+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:64619 conn9: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:12.157+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:64618 conn10: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:14.780+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:27002 is now in state SECONDARY
+2018-02-28T14:04:14.780+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:27003 is now in state SECONDARY
+2018-02-28T14:04:17.161+0800 I -        [conn8] end connection 127.0.0.1:64617 (7 connections now open)
+2018-02-28T14:04:17.162+0800 I -        [conn7] end connection 127.0.0.1:64616 (7 connections now open)
+2018-02-28T14:04:20.908+0800 I REPL     [ReplicationExecutor] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2018-02-28T14:04:20.909+0800 I REPL     [ReplicationExecutor] conducting a dry run election to see if we could be elected
+2018-02-28T14:04:20.909+0800 I REPL     [ReplicationExecutor] VoteRequester(term 0 dry run) received a yes vote from 127.0.0.1:27002; response message: { term: 0, voteGranted: true, reason: "", ok: 1.0 }
+2018-02-28T14:04:20.909+0800 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2018-02-28T14:04:21.078+0800 I REPL     [ReplicationExecutor] VoteRequester(term 1) received a yes vote from 127.0.0.1:27002; response message: { term: 1, voteGranted: true, reason: "", ok: 1.0 }
+2018-02-28T14:04:21.078+0800 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 1
+2018-02-28T14:04:21.078+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Ending connection to host 127.0.0.1:27003 due to bad connection status; 0 connections to that host remain open
+2018-02-28T14:04:21.078+0800 I REPL     [ReplicationExecutor] transition to PRIMARY
+2018-02-28T14:04:21.087+0800 I REPL     [ReplicationExecutor] Entering primary catch-up mode.
+2018-02-28T14:04:21.087+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:27003
+2018-02-28T14:04:21.087+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:27003, took 0ms (1 connections now open to 127.0.0.1:27003)
+2018-02-28T14:04:21.087+0800 I REPL     [ReplicationExecutor] Caught up to the latest optime known via heartbeats after becoming primary.
+2018-02-28T14:04:21.087+0800 I REPL     [ReplicationExecutor] Exited primary catch-up mode.
+2018-02-28T14:04:22.828+0800 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2018-02-28T14:04:27.397+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64647 #11 (6 connections now open)
+2018-02-28T14:04:27.397+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:64647 conn11: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:27.415+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:64648 #12 (7 connections now open)
+2018-02-28T14:04:27.416+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:64648 conn12: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:04:37.193+0800 I -        [conn2] end connection 127.0.0.1:64514 (7 connections now open)
+2018-02-28T14:24:16.705+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50403 #13 (7 connections now open)
+2018-02-28T14:24:16.708+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:50403 conn13: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:16.710+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50405 #14 (8 connections now open)
+2018-02-28T14:24:16.711+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:50405 conn14: { driver: { name: "AddShard-TaskExecutor", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:16.717+0800 I COMMAND  [conn14] setting featureCompatibilityVersion to 3.4
+2018-02-28T14:24:17.025+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50408 #15 (9 connections now open)
+2018-02-28T14:24:17.025+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:50408 conn15: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:20.452+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50418 #16 (10 connections now open)
+2018-02-28T14:24:20.452+0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:50418 conn16: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:24.075+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50425 #17 (11 connections now open)
+2018-02-28T14:24:24.075+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:50425 conn17: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:24.077+0800 I -        [conn17] end connection 127.0.0.1:50425 (11 connections now open)
+2018-02-28T14:24:34.214+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50449 #18 (11 connections now open)
+2018-02-28T14:24:34.214+0800 I NETWORK  [conn18] received client metadata from 127.0.0.1:50449 conn18: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:34.215+0800 I -        [conn18] end connection 127.0.0.1:50449 (11 connections now open)
+2018-02-28T14:24:44.241+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50473 #19 (11 connections now open)
+2018-02-28T14:24:44.241+0800 I NETWORK  [conn19] received client metadata from 127.0.0.1:50473 conn19: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:44.241+0800 I -        [conn19] end connection 127.0.0.1:50473 (11 connections now open)
+2018-02-28T14:24:45.369+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50479 #20 (11 connections now open)
+2018-02-28T14:24:45.370+0800 I NETWORK  [conn20] received client metadata from 127.0.0.1:50479 conn20: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:54.264+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50499 #21 (12 connections now open)
+2018-02-28T14:24:54.264+0800 I NETWORK  [conn21] received client metadata from 127.0.0.1:50499 conn21: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:24:54.265+0800 I -        [conn21] end connection 127.0.0.1:50499 (12 connections now open)
+2018-02-28T14:25:04.304+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50519 #22 (12 connections now open)
+2018-02-28T14:25:04.304+0800 I NETWORK  [conn22] received client metadata from 127.0.0.1:50519 conn22: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:04.305+0800 I -        [conn22] end connection 127.0.0.1:50519 (12 connections now open)
+2018-02-28T14:25:14.344+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50538 #23 (12 connections now open)
+2018-02-28T14:25:14.344+0800 I NETWORK  [conn23] received client metadata from 127.0.0.1:50538 conn23: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:14.344+0800 I -        [conn23] end connection 127.0.0.1:50538 (12 connections now open)
+2018-02-28T14:25:24.367+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50556 #24 (12 connections now open)
+2018-02-28T14:25:24.367+0800 I NETWORK  [conn24] received client metadata from 127.0.0.1:50556 conn24: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:24.367+0800 I -        [conn24] end connection 127.0.0.1:50556 (12 connections now open)
+2018-02-28T14:25:34.393+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50575 #25 (12 connections now open)
+2018-02-28T14:25:34.393+0800 I NETWORK  [conn25] received client metadata from 127.0.0.1:50575 conn25: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:34.393+0800 I -        [conn25] end connection 127.0.0.1:50575 (12 connections now open)
+2018-02-28T14:25:44.436+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50595 #26 (12 connections now open)
+2018-02-28T14:25:44.436+0800 I NETWORK  [conn26] received client metadata from 127.0.0.1:50595 conn26: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:44.437+0800 I -        [conn26] end connection 127.0.0.1:50595 (12 connections now open)
+2018-02-28T14:25:54.468+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50611 #27 (12 connections now open)
+2018-02-28T14:25:54.468+0800 I NETWORK  [conn27] received client metadata from 127.0.0.1:50611 conn27: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:25:54.469+0800 I -        [conn27] end connection 127.0.0.1:50611 (12 connections now open)
+2018-02-28T14:26:04.504+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50631 #28 (12 connections now open)
+2018-02-28T14:26:04.508+0800 I NETWORK  [conn28] received client metadata from 127.0.0.1:50631 conn28: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:04.509+0800 I -        [conn28] end connection 127.0.0.1:50631 (12 connections now open)
+2018-02-28T14:26:14.539+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50648 #29 (12 connections now open)
+2018-02-28T14:26:14.539+0800 I NETWORK  [conn29] received client metadata from 127.0.0.1:50648 conn29: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:14.540+0800 I -        [conn29] end connection 127.0.0.1:50648 (12 connections now open)
+2018-02-28T14:26:24.578+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50668 #30 (12 connections now open)
+2018-02-28T14:26:24.578+0800 I NETWORK  [conn30] received client metadata from 127.0.0.1:50668 conn30: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:24.579+0800 I -        [conn30] end connection 127.0.0.1:50668 (12 connections now open)
+2018-02-28T14:26:34.605+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50691 #31 (12 connections now open)
+2018-02-28T14:26:34.605+0800 I NETWORK  [conn31] received client metadata from 127.0.0.1:50691 conn31: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:34.606+0800 I -        [conn31] end connection 127.0.0.1:50691 (12 connections now open)
+2018-02-28T14:26:44.633+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50711 #32 (12 connections now open)
+2018-02-28T14:26:44.633+0800 I NETWORK  [conn32] received client metadata from 127.0.0.1:50711 conn32: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:44.634+0800 I -        [conn32] end connection 127.0.0.1:50711 (12 connections now open)
+2018-02-28T14:26:54.667+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50730 #33 (12 connections now open)
+2018-02-28T14:26:54.667+0800 I NETWORK  [conn33] received client metadata from 127.0.0.1:50730 conn33: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:26:54.668+0800 I -        [conn33] end connection 127.0.0.1:50730 (12 connections now open)
+2018-02-28T14:27:04.693+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50751 #34 (12 connections now open)
+2018-02-28T14:27:04.693+0800 I NETWORK  [conn34] received client metadata from 127.0.0.1:50751 conn34: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:04.694+0800 I -        [conn34] end connection 127.0.0.1:50751 (12 connections now open)
+2018-02-28T14:27:14.754+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50769 #35 (12 connections now open)
+2018-02-28T14:27:14.755+0800 I NETWORK  [conn35] received client metadata from 127.0.0.1:50769 conn35: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:14.756+0800 I -        [conn35] end connection 127.0.0.1:50769 (12 connections now open)
+2018-02-28T14:27:24.777+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50787 #36 (12 connections now open)
+2018-02-28T14:27:24.782+0800 I NETWORK  [conn36] received client metadata from 127.0.0.1:50787 conn36: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:24.784+0800 I -        [conn36] end connection 127.0.0.1:50787 (12 connections now open)
+2018-02-28T14:27:34.814+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50801 #37 (12 connections now open)
+2018-02-28T14:27:34.814+0800 I NETWORK  [conn37] received client metadata from 127.0.0.1:50801 conn37: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:34.815+0800 I -        [conn37] end connection 127.0.0.1:50801 (12 connections now open)
+2018-02-28T14:27:44.838+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50820 #38 (12 connections now open)
+2018-02-28T14:27:44.841+0800 I NETWORK  [conn38] received client metadata from 127.0.0.1:50820 conn38: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:44.842+0800 I -        [conn38] end connection 127.0.0.1:50820 (12 connections now open)
+2018-02-28T14:27:54.893+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50838 #39 (12 connections now open)
+2018-02-28T14:27:54.894+0800 I NETWORK  [conn39] received client metadata from 127.0.0.1:50838 conn39: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:27:54.897+0800 I -        [conn39] end connection 127.0.0.1:50838 (12 connections now open)
+2018-02-28T14:28:04.928+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50858 #40 (12 connections now open)
+2018-02-28T14:28:04.928+0800 I NETWORK  [conn40] received client metadata from 127.0.0.1:50858 conn40: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:04.929+0800 I -        [conn40] end connection 127.0.0.1:50858 (12 connections now open)
+2018-02-28T14:28:14.964+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50876 #41 (12 connections now open)
+2018-02-28T14:28:14.972+0800 I NETWORK  [conn41] received client metadata from 127.0.0.1:50876 conn41: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:14.979+0800 I -        [conn41] end connection 127.0.0.1:50876 (12 connections now open)
+2018-02-28T14:28:25.067+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50897 #42 (12 connections now open)
+2018-02-28T14:28:25.067+0800 I NETWORK  [conn42] received client metadata from 127.0.0.1:50897 conn42: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:25.068+0800 I -        [conn42] end connection 127.0.0.1:50897 (12 connections now open)
+2018-02-28T14:28:35.126+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50916 #43 (12 connections now open)
+2018-02-28T14:28:35.127+0800 I NETWORK  [conn43] received client metadata from 127.0.0.1:50916 conn43: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:35.127+0800 I -        [conn43] end connection 127.0.0.1:50916 (12 connections now open)
+2018-02-28T14:28:45.150+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50937 #44 (12 connections now open)
+2018-02-28T14:28:45.150+0800 I NETWORK  [conn44] received client metadata from 127.0.0.1:50937 conn44: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:45.151+0800 I -        [conn44] end connection 127.0.0.1:50937 (12 connections now open)
+2018-02-28T14:28:55.172+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50955 #45 (12 connections now open)
+2018-02-28T14:28:55.172+0800 I NETWORK  [conn45] received client metadata from 127.0.0.1:50955 conn45: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:28:55.173+0800 I -        [conn45] end connection 127.0.0.1:50955 (12 connections now open)
+2018-02-28T14:29:05.220+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50970 #46 (12 connections now open)
+2018-02-28T14:29:05.221+0800 I NETWORK  [conn46] received client metadata from 127.0.0.1:50970 conn46: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:05.221+0800 I -        [conn46] end connection 127.0.0.1:50970 (12 connections now open)
+2018-02-28T14:29:15.275+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50991 #47 (12 connections now open)
+2018-02-28T14:29:15.276+0800 I NETWORK  [conn47] received client metadata from 127.0.0.1:50991 conn47: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:15.276+0800 I -        [conn47] end connection 127.0.0.1:50991 (12 connections now open)
+2018-02-28T14:29:16.844+0800 I -        [conn14] end connection 127.0.0.1:50405 (11 connections now open)
+2018-02-28T14:29:25.298+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51009 #48 (11 connections now open)
+2018-02-28T14:29:25.298+0800 I NETWORK  [conn48] received client metadata from 127.0.0.1:51009 conn48: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:25.298+0800 I -        [conn48] end connection 127.0.0.1:51009 (11 connections now open)
+2018-02-28T14:29:35.336+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51029 #49 (11 connections now open)
+2018-02-28T14:29:35.336+0800 I NETWORK  [conn49] received client metadata from 127.0.0.1:51029 conn49: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:35.336+0800 I -        [conn49] end connection 127.0.0.1:51029 (11 connections now open)
+2018-02-28T14:29:45.358+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51047 #50 (11 connections now open)
+2018-02-28T14:29:45.364+0800 I NETWORK  [conn50] received client metadata from 127.0.0.1:51047 conn50: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:45.365+0800 I -        [conn50] end connection 127.0.0.1:51047 (11 connections now open)
+2018-02-28T14:29:55.403+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51066 #51 (11 connections now open)
+2018-02-28T14:29:55.404+0800 I NETWORK  [conn51] received client metadata from 127.0.0.1:51066 conn51: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:29:55.404+0800 I -        [conn51] end connection 127.0.0.1:51066 (11 connections now open)
+2018-02-28T14:30:05.432+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51085 #52 (11 connections now open)
+2018-02-28T14:30:05.433+0800 I NETWORK  [conn52] received client metadata from 127.0.0.1:51085 conn52: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:05.433+0800 I -        [conn52] end connection 127.0.0.1:51085 (11 connections now open)
+2018-02-28T14:30:15.455+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51106 #53 (11 connections now open)
+2018-02-28T14:30:15.456+0800 I NETWORK  [conn53] received client metadata from 127.0.0.1:51106 conn53: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:15.456+0800 I -        [conn53] end connection 127.0.0.1:51106 (11 connections now open)
+2018-02-28T14:30:25.482+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51129 #54 (11 connections now open)
+2018-02-28T14:30:25.482+0800 I NETWORK  [conn54] received client metadata from 127.0.0.1:51129 conn54: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:25.483+0800 I -        [conn54] end connection 127.0.0.1:51129 (11 connections now open)
+2018-02-28T14:30:35.516+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51147 #55 (11 connections now open)
+2018-02-28T14:30:35.516+0800 I NETWORK  [conn55] received client metadata from 127.0.0.1:51147 conn55: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:35.517+0800 I -        [conn55] end connection 127.0.0.1:51147 (11 connections now open)
+2018-02-28T14:30:45.554+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51166 #56 (11 connections now open)
+2018-02-28T14:30:45.554+0800 I NETWORK  [conn56] received client metadata from 127.0.0.1:51166 conn56: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:45.555+0800 I -        [conn56] end connection 127.0.0.1:51166 (11 connections now open)
+2018-02-28T14:30:55.583+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51181 #57 (11 connections now open)
+2018-02-28T14:30:55.583+0800 I NETWORK  [conn57] received client metadata from 127.0.0.1:51181 conn57: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:30:55.583+0800 I -        [conn57] end connection 127.0.0.1:51181 (11 connections now open)
+2018-02-28T14:31:05.647+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51199 #58 (11 connections now open)
+2018-02-28T14:31:05.647+0800 I NETWORK  [conn58] received client metadata from 127.0.0.1:51199 conn58: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:05.648+0800 I -        [conn58] end connection 127.0.0.1:51199 (11 connections now open)
+2018-02-28T14:31:15.679+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51218 #59 (11 connections now open)
+2018-02-28T14:31:15.680+0800 I NETWORK  [conn59] received client metadata from 127.0.0.1:51218 conn59: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:15.680+0800 I -        [conn59] end connection 127.0.0.1:51218 (11 connections now open)
+2018-02-28T14:31:25.712+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51238 #60 (11 connections now open)
+2018-02-28T14:31:25.713+0800 I NETWORK  [conn60] received client metadata from 127.0.0.1:51238 conn60: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:25.714+0800 I -        [conn60] end connection 127.0.0.1:51238 (11 connections now open)
+2018-02-28T14:31:35.740+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51256 #61 (11 connections now open)
+2018-02-28T14:31:35.740+0800 I NETWORK  [conn61] received client metadata from 127.0.0.1:51256 conn61: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:35.740+0800 I -        [conn61] end connection 127.0.0.1:51256 (11 connections now open)
+2018-02-28T14:31:45.768+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51278 #62 (11 connections now open)
+2018-02-28T14:31:45.768+0800 I NETWORK  [conn62] received client metadata from 127.0.0.1:51278 conn62: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:45.769+0800 I -        [conn62] end connection 127.0.0.1:51278 (11 connections now open)
+2018-02-28T14:31:55.798+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51295 #63 (11 connections now open)
+2018-02-28T14:31:55.803+0800 I NETWORK  [conn63] received client metadata from 127.0.0.1:51295 conn63: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:31:55.803+0800 I -        [conn63] end connection 127.0.0.1:51295 (11 connections now open)
+2018-02-28T14:32:05.837+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51314 #64 (11 connections now open)
+2018-02-28T14:32:05.838+0800 I NETWORK  [conn64] received client metadata from 127.0.0.1:51314 conn64: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:05.838+0800 I -        [conn64] end connection 127.0.0.1:51314 (11 connections now open)
+2018-02-28T14:32:15.869+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51331 #65 (11 connections now open)
+2018-02-28T14:32:15.874+0800 I NETWORK  [conn65] received client metadata from 127.0.0.1:51331 conn65: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:15.874+0800 I -        [conn65] end connection 127.0.0.1:51331 (11 connections now open)
+2018-02-28T14:32:25.903+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51346 #66 (11 connections now open)
+2018-02-28T14:32:25.903+0800 I NETWORK  [conn66] received client metadata from 127.0.0.1:51346 conn66: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:25.904+0800 I -        [conn66] end connection 127.0.0.1:51346 (11 connections now open)
+2018-02-28T14:32:35.944+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51365 #67 (11 connections now open)
+2018-02-28T14:32:35.944+0800 I NETWORK  [conn67] received client metadata from 127.0.0.1:51365 conn67: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:35.944+0800 I -        [conn67] end connection 127.0.0.1:51365 (11 connections now open)
+2018-02-28T14:32:45.970+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51385 #68 (11 connections now open)
+2018-02-28T14:32:45.971+0800 I NETWORK  [conn68] received client metadata from 127.0.0.1:51385 conn68: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:45.972+0800 I -        [conn68] end connection 127.0.0.1:51385 (11 connections now open)
+2018-02-28T14:32:55.999+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51405 #69 (11 connections now open)
+2018-02-28T14:32:56.006+0800 I NETWORK  [conn69] received client metadata from 127.0.0.1:51405 conn69: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:32:56.008+0800 I -        [conn69] end connection 127.0.0.1:51405 (11 connections now open)
+2018-02-28T14:33:06.042+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51425 #70 (11 connections now open)
+2018-02-28T14:33:06.046+0800 I NETWORK  [conn70] received client metadata from 127.0.0.1:51425 conn70: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:06.047+0800 I -        [conn70] end connection 127.0.0.1:51425 (11 connections now open)
+2018-02-28T14:33:16.066+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51446 #71 (11 connections now open)
+2018-02-28T14:33:16.066+0800 I NETWORK  [conn71] received client metadata from 127.0.0.1:51446 conn71: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:16.067+0800 I -        [conn71] end connection 127.0.0.1:51446 (11 connections now open)
+2018-02-28T14:33:26.115+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51465 #72 (11 connections now open)
+2018-02-28T14:33:26.115+0800 I NETWORK  [conn72] received client metadata from 127.0.0.1:51465 conn72: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:26.116+0800 I -        [conn72] end connection 127.0.0.1:51465 (11 connections now open)
+2018-02-28T14:33:36.143+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51482 #73 (11 connections now open)
+2018-02-28T14:33:36.143+0800 I NETWORK  [conn73] received client metadata from 127.0.0.1:51482 conn73: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:36.144+0800 I -        [conn73] end connection 127.0.0.1:51482 (11 connections now open)
+2018-02-28T14:33:46.175+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51502 #74 (11 connections now open)
+2018-02-28T14:33:46.175+0800 I NETWORK  [conn74] received client metadata from 127.0.0.1:51502 conn74: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:46.175+0800 I -        [conn74] end connection 127.0.0.1:51502 (11 connections now open)
+2018-02-28T14:33:56.197+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51519 #75 (11 connections now open)
+2018-02-28T14:33:56.197+0800 I NETWORK  [conn75] received client metadata from 127.0.0.1:51519 conn75: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:33:56.198+0800 I -        [conn75] end connection 127.0.0.1:51519 (11 connections now open)
+2018-02-28T14:34:06.237+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51539 #76 (11 connections now open)
+2018-02-28T14:34:06.237+0800 I NETWORK  [conn76] received client metadata from 127.0.0.1:51539 conn76: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:06.238+0800 I -        [conn76] end connection 127.0.0.1:51539 (11 connections now open)
+2018-02-28T14:34:16.267+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51554 #77 (11 connections now open)
+2018-02-28T14:34:16.271+0800 I NETWORK  [conn77] received client metadata from 127.0.0.1:51554 conn77: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:16.272+0800 I -        [conn77] end connection 127.0.0.1:51554 (11 connections now open)
+2018-02-28T14:34:26.304+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51573 #78 (11 connections now open)
+2018-02-28T14:34:26.304+0800 I NETWORK  [conn78] received client metadata from 127.0.0.1:51573 conn78: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:26.311+0800 I -        [conn78] end connection 127.0.0.1:51573 (11 connections now open)
+2018-02-28T14:34:36.345+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51593 #79 (11 connections now open)
+2018-02-28T14:34:36.345+0800 I NETWORK  [conn79] received client metadata from 127.0.0.1:51593 conn79: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:36.346+0800 I -        [conn79] end connection 127.0.0.1:51593 (11 connections now open)
+2018-02-28T14:34:46.387+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51614 #80 (11 connections now open)
+2018-02-28T14:34:46.387+0800 I NETWORK  [conn80] received client metadata from 127.0.0.1:51614 conn80: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:46.387+0800 I -        [conn80] end connection 127.0.0.1:51614 (11 connections now open)
+2018-02-28T14:34:56.417+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51632 #81 (11 connections now open)
+2018-02-28T14:34:56.417+0800 I NETWORK  [conn81] received client metadata from 127.0.0.1:51632 conn81: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:34:56.417+0800 I -        [conn81] end connection 127.0.0.1:51632 (11 connections now open)
+2018-02-28T14:35:06.444+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51649 #82 (11 connections now open)
+2018-02-28T14:35:06.444+0800 I NETWORK  [conn82] received client metadata from 127.0.0.1:51649 conn82: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:06.445+0800 I -        [conn82] end connection 127.0.0.1:51649 (11 connections now open)
+2018-02-28T14:35:16.475+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51666 #83 (11 connections now open)
+2018-02-28T14:35:16.479+0800 I NETWORK  [conn83] received client metadata from 127.0.0.1:51666 conn83: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:16.480+0800 I -        [conn83] end connection 127.0.0.1:51666 (11 connections now open)
+2018-02-28T14:35:26.506+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51685 #84 (11 connections now open)
+2018-02-28T14:35:26.510+0800 I NETWORK  [conn84] received client metadata from 127.0.0.1:51685 conn84: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:26.511+0800 I -        [conn84] end connection 127.0.0.1:51685 (11 connections now open)
+2018-02-28T14:35:36.536+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51702 #85 (11 connections now open)
+2018-02-28T14:35:36.541+0800 I NETWORK  [conn85] received client metadata from 127.0.0.1:51702 conn85: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:36.541+0800 I -        [conn85] end connection 127.0.0.1:51702 (11 connections now open)
+2018-02-28T14:35:46.561+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51720 #86 (11 connections now open)
+2018-02-28T14:35:46.562+0800 I NETWORK  [conn86] received client metadata from 127.0.0.1:51720 conn86: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:46.571+0800 I -        [conn86] end connection 127.0.0.1:51720 (11 connections now open)
+2018-02-28T14:35:56.604+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51739 #87 (11 connections now open)
+2018-02-28T14:35:56.605+0800 I NETWORK  [conn87] received client metadata from 127.0.0.1:51739 conn87: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:35:56.605+0800 I -        [conn87] end connection 127.0.0.1:51739 (11 connections now open)
+2018-02-28T14:36:06.638+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51758 #88 (11 connections now open)
+2018-02-28T14:36:06.638+0800 I NETWORK  [conn88] received client metadata from 127.0.0.1:51758 conn88: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:06.639+0800 I -        [conn88] end connection 127.0.0.1:51758 (11 connections now open)
+2018-02-28T14:36:16.667+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51776 #89 (11 connections now open)
+2018-02-28T14:36:16.667+0800 I NETWORK  [conn89] received client metadata from 127.0.0.1:51776 conn89: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:16.668+0800 I -        [conn89] end connection 127.0.0.1:51776 (11 connections now open)
+2018-02-28T14:36:26.696+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51794 #90 (11 connections now open)
+2018-02-28T14:36:26.696+0800 I NETWORK  [conn90] received client metadata from 127.0.0.1:51794 conn90: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:26.697+0800 I -        [conn90] end connection 127.0.0.1:51794 (11 connections now open)
+2018-02-28T14:36:36.721+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51812 #91 (11 connections now open)
+2018-02-28T14:36:36.721+0800 I NETWORK  [conn91] received client metadata from 127.0.0.1:51812 conn91: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:36.722+0800 I -        [conn91] end connection 127.0.0.1:51812 (11 connections now open)
+2018-02-28T14:36:46.760+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51831 #92 (11 connections now open)
+2018-02-28T14:36:46.761+0800 I NETWORK  [conn92] received client metadata from 127.0.0.1:51831 conn92: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:46.761+0800 I -        [conn92] end connection 127.0.0.1:51831 (11 connections now open)
+2018-02-28T14:36:56.784+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51848 #93 (11 connections now open)
+2018-02-28T14:36:56.784+0800 I NETWORK  [conn93] received client metadata from 127.0.0.1:51848 conn93: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:36:56.786+0800 I -        [conn93] end connection 127.0.0.1:51848 (11 connections now open)
+2018-02-28T14:37:06.811+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51864 #94 (11 connections now open)
+2018-02-28T14:37:06.811+0800 I NETWORK  [conn94] received client metadata from 127.0.0.1:51864 conn94: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:06.812+0800 I -        [conn94] end connection 127.0.0.1:51864 (11 connections now open)
+2018-02-28T14:37:16.839+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51883 #95 (11 connections now open)
+2018-02-28T14:37:16.843+0800 I NETWORK  [conn95] received client metadata from 127.0.0.1:51883 conn95: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:16.843+0800 I -        [conn95] end connection 127.0.0.1:51883 (11 connections now open)
+2018-02-28T14:37:26.877+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51903 #96 (11 connections now open)
+2018-02-28T14:37:26.881+0800 I NETWORK  [conn96] received client metadata from 127.0.0.1:51903 conn96: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:26.882+0800 I -        [conn96] end connection 127.0.0.1:51903 (11 connections now open)
+2018-02-28T14:37:36.910+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51920 #97 (11 connections now open)
+2018-02-28T14:37:36.910+0800 I NETWORK  [conn97] received client metadata from 127.0.0.1:51920 conn97: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:36.910+0800 I -        [conn97] end connection 127.0.0.1:51920 (11 connections now open)
+2018-02-28T14:37:46.941+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51941 #98 (11 connections now open)
+2018-02-28T14:37:46.945+0800 I NETWORK  [conn98] received client metadata from 127.0.0.1:51941 conn98: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:46.945+0800 I -        [conn98] end connection 127.0.0.1:51941 (11 connections now open)
+2018-02-28T14:37:56.971+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51959 #99 (11 connections now open)
+2018-02-28T14:37:56.976+0800 I NETWORK  [conn99] received client metadata from 127.0.0.1:51959 conn99: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:37:56.977+0800 I -        [conn99] end connection 127.0.0.1:51959 (11 connections now open)
+2018-02-28T14:38:07.013+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51977 #100 (11 connections now open)
+2018-02-28T14:38:07.018+0800 I NETWORK  [conn100] received client metadata from 127.0.0.1:51977 conn100: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:07.019+0800 I -        [conn100] end connection 127.0.0.1:51977 (11 connections now open)
+2018-02-28T14:38:17.085+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51995 #101 (11 connections now open)
+2018-02-28T14:38:17.085+0800 I NETWORK  [conn101] received client metadata from 127.0.0.1:51995 conn101: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:17.086+0800 I -        [conn101] end connection 127.0.0.1:51995 (11 connections now open)
+2018-02-28T14:38:27.117+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52009 #102 (11 connections now open)
+2018-02-28T14:38:27.121+0800 I NETWORK  [conn102] received client metadata from 127.0.0.1:52009 conn102: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:27.122+0800 I -        [conn102] end connection 127.0.0.1:52009 (11 connections now open)
+2018-02-28T14:38:37.156+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52028 #103 (11 connections now open)
+2018-02-28T14:38:37.156+0800 I NETWORK  [conn103] received client metadata from 127.0.0.1:52028 conn103: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:37.157+0800 I -        [conn103] end connection 127.0.0.1:52028 (11 connections now open)
+2018-02-28T14:38:47.184+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52047 #104 (11 connections now open)
+2018-02-28T14:38:47.184+0800 I NETWORK  [conn104] received client metadata from 127.0.0.1:52047 conn104: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:47.185+0800 I -        [conn104] end connection 127.0.0.1:52047 (11 connections now open)
+2018-02-28T14:38:57.224+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52064 #105 (11 connections now open)
+2018-02-28T14:38:57.224+0800 I NETWORK  [conn105] received client metadata from 127.0.0.1:52064 conn105: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:38:57.225+0800 I -        [conn105] end connection 127.0.0.1:52064 (11 connections now open)
+2018-02-28T14:39:07.258+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52084 #106 (11 connections now open)
+2018-02-28T14:39:07.259+0800 I NETWORK  [conn106] received client metadata from 127.0.0.1:52084 conn106: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:07.259+0800 I -        [conn106] end connection 127.0.0.1:52084 (11 connections now open)
+2018-02-28T14:39:17.289+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52104 #107 (11 connections now open)
+2018-02-28T14:39:17.289+0800 I NETWORK  [conn107] received client metadata from 127.0.0.1:52104 conn107: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:17.289+0800 I -        [conn107] end connection 127.0.0.1:52104 (11 connections now open)
+2018-02-28T14:39:27.325+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52123 #108 (11 connections now open)
+2018-02-28T14:39:27.325+0800 I NETWORK  [conn108] received client metadata from 127.0.0.1:52123 conn108: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:27.326+0800 I -        [conn108] end connection 127.0.0.1:52123 (11 connections now open)
+2018-02-28T14:39:37.351+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52142 #109 (11 connections now open)
+2018-02-28T14:39:37.355+0800 I NETWORK  [conn109] received client metadata from 127.0.0.1:52142 conn109: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:37.356+0800 I -        [conn109] end connection 127.0.0.1:52142 (11 connections now open)
+2018-02-28T14:39:47.375+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52160 #110 (11 connections now open)
+2018-02-28T14:39:47.380+0800 I NETWORK  [conn110] received client metadata from 127.0.0.1:52160 conn110: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:47.381+0800 I -        [conn110] end connection 127.0.0.1:52160 (11 connections now open)
+2018-02-28T14:39:57.419+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52174 #111 (11 connections now open)
+2018-02-28T14:39:57.419+0800 I NETWORK  [conn111] received client metadata from 127.0.0.1:52174 conn111: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:39:57.420+0800 I -        [conn111] end connection 127.0.0.1:52174 (11 connections now open)
+2018-02-28T14:40:07.445+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52192 #112 (11 connections now open)
+2018-02-28T14:40:07.449+0800 I NETWORK  [conn112] received client metadata from 127.0.0.1:52192 conn112: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:07.450+0800 I -        [conn112] end connection 127.0.0.1:52192 (11 connections now open)
+2018-02-28T14:40:17.475+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52211 #113 (11 connections now open)
+2018-02-28T14:40:17.476+0800 I NETWORK  [conn113] received client metadata from 127.0.0.1:52211 conn113: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:17.476+0800 I -        [conn113] end connection 127.0.0.1:52211 (11 connections now open)
+2018-02-28T14:40:27.508+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52234 #114 (11 connections now open)
+2018-02-28T14:40:27.514+0800 I NETWORK  [conn114] received client metadata from 127.0.0.1:52234 conn114: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:27.514+0800 I -        [conn114] end connection 127.0.0.1:52234 (11 connections now open)
+2018-02-28T14:40:37.542+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52253 #115 (11 connections now open)
+2018-02-28T14:40:37.547+0800 I NETWORK  [conn115] received client metadata from 127.0.0.1:52253 conn115: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:37.547+0800 I -        [conn115] end connection 127.0.0.1:52253 (11 connections now open)
+2018-02-28T14:40:47.574+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52274 #116 (11 connections now open)
+2018-02-28T14:40:47.574+0800 I NETWORK  [conn116] received client metadata from 127.0.0.1:52274 conn116: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:47.575+0800 I -        [conn116] end connection 127.0.0.1:52274 (11 connections now open)
+2018-02-28T14:40:57.600+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52291 #117 (11 connections now open)
+2018-02-28T14:40:57.605+0800 I NETWORK  [conn117] received client metadata from 127.0.0.1:52291 conn117: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:40:57.605+0800 I -        [conn117] end connection 127.0.0.1:52291 (11 connections now open)
+2018-02-28T14:41:07.636+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52310 #118 (11 connections now open)
+2018-02-28T14:41:07.638+0800 I NETWORK  [conn118] received client metadata from 127.0.0.1:52310 conn118: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:07.639+0800 I -        [conn118] end connection 127.0.0.1:52310 (11 connections now open)
+2018-02-28T14:41:17.668+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52328 #119 (11 connections now open)
+2018-02-28T14:41:17.668+0800 I NETWORK  [conn119] received client metadata from 127.0.0.1:52328 conn119: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:17.668+0800 I -        [conn119] end connection 127.0.0.1:52328 (11 connections now open)
+2018-02-28T14:41:27.692+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52342 #120 (11 connections now open)
+2018-02-28T14:41:27.692+0800 I NETWORK  [conn120] received client metadata from 127.0.0.1:52342 conn120: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:27.693+0800 I -        [conn120] end connection 127.0.0.1:52342 (11 connections now open)
+2018-02-28T14:41:37.731+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52363 #121 (11 connections now open)
+2018-02-28T14:41:37.732+0800 I NETWORK  [conn121] received client metadata from 127.0.0.1:52363 conn121: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:37.732+0800 I -        [conn121] end connection 127.0.0.1:52363 (11 connections now open)
+2018-02-28T14:41:47.761+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52384 #122 (11 connections now open)
+2018-02-28T14:41:47.761+0800 I NETWORK  [conn122] received client metadata from 127.0.0.1:52384 conn122: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:47.762+0800 I -        [conn122] end connection 127.0.0.1:52384 (11 connections now open)
+2018-02-28T14:41:57.783+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52403 #123 (11 connections now open)
+2018-02-28T14:41:57.785+0800 I NETWORK  [conn123] received client metadata from 127.0.0.1:52403 conn123: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:41:57.785+0800 I -        [conn123] end connection 127.0.0.1:52403 (11 connections now open)
+2018-02-28T14:42:07.820+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52423 #124 (11 connections now open)
+2018-02-28T14:42:07.820+0800 I NETWORK  [conn124] received client metadata from 127.0.0.1:52423 conn124: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:07.820+0800 I -        [conn124] end connection 127.0.0.1:52423 (11 connections now open)
+2018-02-28T14:42:17.844+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52443 #125 (11 connections now open)
+2018-02-28T14:42:17.844+0800 I NETWORK  [conn125] received client metadata from 127.0.0.1:52443 conn125: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:17.845+0800 I -        [conn125] end connection 127.0.0.1:52443 (11 connections now open)
+2018-02-28T14:42:27.870+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52462 #126 (11 connections now open)
+2018-02-28T14:42:27.871+0800 I NETWORK  [conn126] received client metadata from 127.0.0.1:52462 conn126: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:27.872+0800 I -        [conn126] end connection 127.0.0.1:52462 (11 connections now open)
+2018-02-28T14:42:37.896+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52475 #127 (11 connections now open)
+2018-02-28T14:42:37.896+0800 I NETWORK  [conn127] received client metadata from 127.0.0.1:52475 conn127: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:37.896+0800 I -        [conn127] end connection 127.0.0.1:52475 (11 connections now open)
+2018-02-28T14:42:47.934+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52495 #128 (11 connections now open)
+2018-02-28T14:42:47.934+0800 I NETWORK  [conn128] received client metadata from 127.0.0.1:52495 conn128: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:47.934+0800 I -        [conn128] end connection 127.0.0.1:52495 (11 connections now open)
+2018-02-28T14:42:57.955+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52512 #129 (11 connections now open)
+2018-02-28T14:42:57.955+0800 I NETWORK  [conn129] received client metadata from 127.0.0.1:52512 conn129: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:42:57.956+0800 I -        [conn129] end connection 127.0.0.1:52512 (11 connections now open)
+2018-02-28T14:43:07.993+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52532 #130 (11 connections now open)
+2018-02-28T14:43:07.993+0800 I NETWORK  [conn130] received client metadata from 127.0.0.1:52532 conn130: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:07.994+0800 I -        [conn130] end connection 127.0.0.1:52532 (11 connections now open)
+2018-02-28T14:43:18.016+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52551 #131 (11 connections now open)
+2018-02-28T14:43:18.018+0800 I NETWORK  [conn131] received client metadata from 127.0.0.1:52551 conn131: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:18.018+0800 I -        [conn131] end connection 127.0.0.1:52551 (11 connections now open)
+2018-02-28T14:43:28.071+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52571 #132 (11 connections now open)
+2018-02-28T14:43:28.072+0800 I NETWORK  [conn132] received client metadata from 127.0.0.1:52571 conn132: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:28.072+0800 I -        [conn132] end connection 127.0.0.1:52571 (11 connections now open)
+2018-02-28T14:43:38.100+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52590 #133 (11 connections now open)
+2018-02-28T14:43:38.100+0800 I NETWORK  [conn133] received client metadata from 127.0.0.1:52590 conn133: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:38.101+0800 I -        [conn133] end connection 127.0.0.1:52590 (11 connections now open)
+2018-02-28T14:43:48.144+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52607 #134 (11 connections now open)
+2018-02-28T14:43:48.144+0800 I NETWORK  [conn134] received client metadata from 127.0.0.1:52607 conn134: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:48.145+0800 I -        [conn134] end connection 127.0.0.1:52607 (11 connections now open)
+2018-02-28T14:43:58.178+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52626 #135 (11 connections now open)
+2018-02-28T14:43:58.178+0800 I NETWORK  [conn135] received client metadata from 127.0.0.1:52626 conn135: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:43:58.178+0800 I -        [conn135] end connection 127.0.0.1:52626 (11 connections now open)
+2018-02-28T14:44:08.214+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52644 #136 (11 connections now open)
+2018-02-28T14:44:08.215+0800 I NETWORK  [conn136] received client metadata from 127.0.0.1:52644 conn136: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:08.216+0800 I -        [conn136] end connection 127.0.0.1:52644 (11 connections now open)
+2018-02-28T14:44:18.231+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52662 #137 (11 connections now open)
+2018-02-28T14:44:18.231+0800 I NETWORK  [conn137] received client metadata from 127.0.0.1:52662 conn137: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:18.240+0800 I -        [conn137] end connection 127.0.0.1:52662 (11 connections now open)
+2018-02-28T14:44:28.273+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52683 #138 (11 connections now open)
+2018-02-28T14:44:28.277+0800 I NETWORK  [conn138] received client metadata from 127.0.0.1:52683 conn138: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:28.277+0800 I -        [conn138] end connection 127.0.0.1:52683 (11 connections now open)
+2018-02-28T14:44:38.311+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52700 #139 (11 connections now open)
+2018-02-28T14:44:38.311+0800 I NETWORK  [conn139] received client metadata from 127.0.0.1:52700 conn139: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:38.311+0800 I -        [conn139] end connection 127.0.0.1:52700 (11 connections now open)
+2018-02-28T14:44:48.346+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52720 #140 (11 connections now open)
+2018-02-28T14:44:48.349+0800 I NETWORK  [conn140] received client metadata from 127.0.0.1:52720 conn140: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:48.350+0800 I -        [conn140] end connection 127.0.0.1:52720 (11 connections now open)
+2018-02-28T14:44:58.376+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52738 #141 (11 connections now open)
+2018-02-28T14:44:58.376+0800 I NETWORK  [conn141] received client metadata from 127.0.0.1:52738 conn141: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:44:58.386+0800 I -        [conn141] end connection 127.0.0.1:52738 (11 connections now open)
+2018-02-28T14:45:08.408+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52752 #142 (11 connections now open)
+2018-02-28T14:45:08.408+0800 I NETWORK  [conn142] received client metadata from 127.0.0.1:52752 conn142: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:08.408+0800 I -        [conn142] end connection 127.0.0.1:52752 (11 connections now open)
+2018-02-28T14:45:18.433+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52771 #143 (11 connections now open)
+2018-02-28T14:45:18.433+0800 I NETWORK  [conn143] received client metadata from 127.0.0.1:52771 conn143: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:18.434+0800 I -        [conn143] end connection 127.0.0.1:52771 (11 connections now open)
+2018-02-28T14:45:28.456+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52789 #144 (11 connections now open)
+2018-02-28T14:45:28.457+0800 I NETWORK  [conn144] received client metadata from 127.0.0.1:52789 conn144: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:28.457+0800 I -        [conn144] end connection 127.0.0.1:52789 (11 connections now open)
+2018-02-28T14:45:38.495+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52807 #145 (11 connections now open)
+2018-02-28T14:45:38.496+0800 I NETWORK  [conn145] received client metadata from 127.0.0.1:52807 conn145: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:38.497+0800 I -        [conn145] end connection 127.0.0.1:52807 (11 connections now open)
+2018-02-28T14:45:48.515+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52829 #146 (11 connections now open)
+2018-02-28T14:45:48.515+0800 I NETWORK  [conn146] received client metadata from 127.0.0.1:52829 conn146: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:48.516+0800 I -        [conn146] end connection 127.0.0.1:52829 (11 connections now open)
+2018-02-28T14:45:58.546+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52846 #147 (11 connections now open)
+2018-02-28T14:45:58.546+0800 I NETWORK  [conn147] received client metadata from 127.0.0.1:52846 conn147: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:45:58.546+0800 I -        [conn147] end connection 127.0.0.1:52846 (11 connections now open)
+2018-02-28T14:46:08.570+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52867 #148 (11 connections now open)
+2018-02-28T14:46:08.570+0800 I NETWORK  [conn148] received client metadata from 127.0.0.1:52867 conn148: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:08.570+0800 I -        [conn148] end connection 127.0.0.1:52867 (11 connections now open)
+2018-02-28T14:46:18.586+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52887 #149 (11 connections now open)
+2018-02-28T14:46:18.586+0800 I NETWORK  [conn149] received client metadata from 127.0.0.1:52887 conn149: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:18.587+0800 I -        [conn149] end connection 127.0.0.1:52887 (11 connections now open)
+2018-02-28T14:46:28.607+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52906 #150 (11 connections now open)
+2018-02-28T14:46:28.607+0800 I NETWORK  [conn150] received client metadata from 127.0.0.1:52906 conn150: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:28.608+0800 I -        [conn150] end connection 127.0.0.1:52906 (11 connections now open)
+2018-02-28T14:46:38.729+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52924 #151 (11 connections now open)
+2018-02-28T14:46:38.730+0800 I NETWORK  [conn151] received client metadata from 127.0.0.1:52924 conn151: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:38.730+0800 I -        [conn151] end connection 127.0.0.1:52924 (11 connections now open)
+2018-02-28T14:46:48.758+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52940 #152 (11 connections now open)
+2018-02-28T14:46:48.758+0800 I NETWORK  [conn152] received client metadata from 127.0.0.1:52940 conn152: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:48.759+0800 I -        [conn152] end connection 127.0.0.1:52940 (11 connections now open)
+2018-02-28T14:46:58.782+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52961 #153 (11 connections now open)
+2018-02-28T14:46:58.783+0800 I NETWORK  [conn153] received client metadata from 127.0.0.1:52961 conn153: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:46:58.783+0800 I -        [conn153] end connection 127.0.0.1:52961 (11 connections now open)
+2018-02-28T14:47:08.818+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52978 #154 (11 connections now open)
+2018-02-28T14:47:08.818+0800 I NETWORK  [conn154] received client metadata from 127.0.0.1:52978 conn154: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:08.818+0800 I -        [conn154] end connection 127.0.0.1:52978 (11 connections now open)
+2018-02-28T14:47:18.844+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52997 #155 (11 connections now open)
+2018-02-28T14:47:18.844+0800 I NETWORK  [conn155] received client metadata from 127.0.0.1:52997 conn155: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:18.844+0800 I -        [conn155] end connection 127.0.0.1:52997 (11 connections now open)
+2018-02-28T14:47:28.873+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53014 #156 (11 connections now open)
+2018-02-28T14:47:28.874+0800 I NETWORK  [conn156] received client metadata from 127.0.0.1:53014 conn156: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:28.874+0800 I -        [conn156] end connection 127.0.0.1:53014 (11 connections now open)
+2018-02-28T14:47:39.179+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53034 #157 (11 connections now open)
+2018-02-28T14:47:39.180+0800 I NETWORK  [conn157] received client metadata from 127.0.0.1:53034 conn157: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:39.180+0800 I -        [conn157] end connection 127.0.0.1:53034 (11 connections now open)
+2018-02-28T14:47:49.203+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53052 #158 (11 connections now open)
+2018-02-28T14:47:49.203+0800 I NETWORK  [conn158] received client metadata from 127.0.0.1:53052 conn158: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:49.204+0800 I -        [conn158] end connection 127.0.0.1:53052 (11 connections now open)
+2018-02-28T14:47:59.231+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53071 #159 (11 connections now open)
+2018-02-28T14:47:59.232+0800 I NETWORK  [conn159] received client metadata from 127.0.0.1:53071 conn159: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:47:59.233+0800 I -        [conn159] end connection 127.0.0.1:53071 (11 connections now open)
+2018-02-28T14:48:09.247+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53086 #160 (11 connections now open)
+2018-02-28T14:48:09.249+0800 I NETWORK  [conn160] received client metadata from 127.0.0.1:53086 conn160: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:09.249+0800 I -        [conn160] end connection 127.0.0.1:53086 (11 connections now open)
+2018-02-28T14:48:19.273+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53105 #161 (11 connections now open)
+2018-02-28T14:48:19.274+0800 I NETWORK  [conn161] received client metadata from 127.0.0.1:53105 conn161: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:19.274+0800 I -        [conn161] end connection 127.0.0.1:53105 (11 connections now open)
+2018-02-28T14:48:29.302+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53123 #162 (11 connections now open)
+2018-02-28T14:48:29.302+0800 I NETWORK  [conn162] received client metadata from 127.0.0.1:53123 conn162: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:29.303+0800 I -        [conn162] end connection 127.0.0.1:53123 (11 connections now open)
+2018-02-28T14:48:39.335+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53142 #163 (11 connections now open)
+2018-02-28T14:48:39.335+0800 I NETWORK  [conn163] received client metadata from 127.0.0.1:53142 conn163: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:39.335+0800 I -        [conn163] end connection 127.0.0.1:53142 (11 connections now open)
+2018-02-28T14:48:49.360+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53160 #164 (11 connections now open)
+2018-02-28T14:48:49.360+0800 I NETWORK  [conn164] received client metadata from 127.0.0.1:53160 conn164: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:49.361+0800 I -        [conn164] end connection 127.0.0.1:53160 (11 connections now open)
+2018-02-28T14:48:59.385+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53179 #165 (11 connections now open)
+2018-02-28T14:48:59.385+0800 I NETWORK  [conn165] received client metadata from 127.0.0.1:53179 conn165: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:48:59.386+0800 I -        [conn165] end connection 127.0.0.1:53179 (11 connections now open)
+2018-02-28T14:49:09.434+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53196 #166 (11 connections now open)
+2018-02-28T14:49:09.434+0800 I NETWORK  [conn166] received client metadata from 127.0.0.1:53196 conn166: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:09.436+0800 I -        [conn166] end connection 127.0.0.1:53196 (11 connections now open)
+2018-02-28T14:49:19.460+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53218 #167 (11 connections now open)
+2018-02-28T14:49:19.461+0800 I NETWORK  [conn167] received client metadata from 127.0.0.1:53218 conn167: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:19.462+0800 I -        [conn167] end connection 127.0.0.1:53218 (11 connections now open)
+2018-02-28T14:49:29.487+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53237 #168 (11 connections now open)
+2018-02-28T14:49:29.487+0800 I NETWORK  [conn168] received client metadata from 127.0.0.1:53237 conn168: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:29.488+0800 I -        [conn168] end connection 127.0.0.1:53237 (11 connections now open)
+2018-02-28T14:49:39.512+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53256 #169 (11 connections now open)
+2018-02-28T14:49:39.512+0800 I NETWORK  [conn169] received client metadata from 127.0.0.1:53256 conn169: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:39.513+0800 I -        [conn169] end connection 127.0.0.1:53256 (11 connections now open)
+2018-02-28T14:49:49.544+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53271 #170 (11 connections now open)
+2018-02-28T14:49:49.545+0800 I NETWORK  [conn170] received client metadata from 127.0.0.1:53271 conn170: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:49.545+0800 I -        [conn170] end connection 127.0.0.1:53271 (11 connections now open)
+2018-02-28T14:49:59.577+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53289 #171 (11 connections now open)
+2018-02-28T14:49:59.577+0800 I NETWORK  [conn171] received client metadata from 127.0.0.1:53289 conn171: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:49:59.577+0800 I -        [conn171] end connection 127.0.0.1:53289 (11 connections now open)
+2018-02-28T14:50:09.616+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53307 #172 (11 connections now open)
+2018-02-28T14:50:09.617+0800 I NETWORK  [conn172] received client metadata from 127.0.0.1:53307 conn172: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:09.617+0800 I -        [conn172] end connection 127.0.0.1:53307 (11 connections now open)
+2018-02-28T14:50:19.646+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53325 #173 (11 connections now open)
+2018-02-28T14:50:19.646+0800 I NETWORK  [conn173] received client metadata from 127.0.0.1:53325 conn173: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:19.647+0800 I -        [conn173] end connection 127.0.0.1:53325 (11 connections now open)
+2018-02-28T14:50:29.676+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53342 #174 (11 connections now open)
+2018-02-28T14:50:29.676+0800 I NETWORK  [conn174] received client metadata from 127.0.0.1:53342 conn174: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:29.677+0800 I -        [conn174] end connection 127.0.0.1:53342 (11 connections now open)
+2018-02-28T14:50:39.709+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53363 #175 (11 connections now open)
+2018-02-28T14:50:39.710+0800 I NETWORK  [conn175] received client metadata from 127.0.0.1:53363 conn175: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:39.710+0800 I -        [conn175] end connection 127.0.0.1:53363 (11 connections now open)
+2018-02-28T14:50:49.741+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53384 #176 (11 connections now open)
+2018-02-28T14:50:49.748+0800 I NETWORK  [conn176] received client metadata from 127.0.0.1:53384 conn176: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:49.749+0800 I -        [conn176] end connection 127.0.0.1:53384 (11 connections now open)
+2018-02-28T14:50:59.781+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53403 #177 (11 connections now open)
+2018-02-28T14:50:59.785+0800 I NETWORK  [conn177] received client metadata from 127.0.0.1:53403 conn177: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:50:59.786+0800 I -        [conn177] end connection 127.0.0.1:53403 (11 connections now open)
+2018-02-28T14:51:09.821+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53421 #178 (11 connections now open)
+2018-02-28T14:51:09.821+0800 I NETWORK  [conn178] received client metadata from 127.0.0.1:53421 conn178: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:09.821+0800 I -        [conn178] end connection 127.0.0.1:53421 (11 connections now open)
+2018-02-28T14:51:19.845+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53441 #179 (11 connections now open)
+2018-02-28T14:51:19.845+0800 I NETWORK  [conn179] received client metadata from 127.0.0.1:53441 conn179: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:19.846+0800 I -        [conn179] end connection 127.0.0.1:53441 (11 connections now open)
+2018-02-28T14:51:29.878+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53455 #180 (11 connections now open)
+2018-02-28T14:51:29.878+0800 I NETWORK  [conn180] received client metadata from 127.0.0.1:53455 conn180: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:29.879+0800 I -        [conn180] end connection 127.0.0.1:53455 (11 connections now open)
+2018-02-28T14:51:39.911+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53475 #181 (11 connections now open)
+2018-02-28T14:51:39.912+0800 I NETWORK  [conn181] received client metadata from 127.0.0.1:53475 conn181: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:39.915+0800 I -        [conn181] end connection 127.0.0.1:53475 (11 connections now open)
+2018-02-28T14:51:49.938+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53495 #182 (11 connections now open)
+2018-02-28T14:51:49.939+0800 I NETWORK  [conn182] received client metadata from 127.0.0.1:53495 conn182: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:49.940+0800 I -        [conn182] end connection 127.0.0.1:53495 (11 connections now open)
+2018-02-28T14:51:59.963+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53513 #183 (11 connections now open)
+2018-02-28T14:51:59.964+0800 I NETWORK  [conn183] received client metadata from 127.0.0.1:53513 conn183: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:51:59.964+0800 I -        [conn183] end connection 127.0.0.1:53513 (11 connections now open)
+2018-02-28T14:52:10.008+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53532 #184 (11 connections now open)
+2018-02-28T14:52:10.008+0800 I NETWORK  [conn184] received client metadata from 127.0.0.1:53532 conn184: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:52:10.009+0800 I -        [conn184] end connection 127.0.0.1:53532 (11 connections now open)
+2018-02-28T14:52:20.031+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53550 #185 (11 connections now open)
+2018-02-28T14:52:20.031+0800 I NETWORK  [conn185] received client metadata from 127.0.0.1:53550 conn185: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:52:20.032+0800 I -        [conn185] end connection 127.0.0.1:53550 (11 connections now open)
+2018-02-28T14:52:30.058+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53568 #186 (11 connections now open)
+2018-02-28T14:52:30.058+0800 I NETWORK  [conn186] received client metadata from 127.0.0.1:53568 conn186: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:52:30.058+0800 I -        [conn186] end connection 127.0.0.1:53568 (11 connections now open)
+2018-02-28T14:52:40.090+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53619 #187 (11 connections now open)
+2018-02-28T14:52:40.090+0800 I NETWORK  [conn187] received client metadata from 127.0.0.1:53619 conn187: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:52:40.091+0800 I -        [conn187] end connection 127.0.0.1:53619 (11 connections now open)
+2018-02-28T14:52:50.117+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53637 #188 (11 connections now open)
+2018-02-28T14:52:50.118+0800 I NETWORK  [conn188] received client metadata from 127.0.0.1:53637 conn188: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:52:50.119+0800 I -        [conn188] end connection 127.0.0.1:53637 (11 connections now open)
+2018-02-28T14:53:00.151+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53655 #189 (11 connections now open)
+2018-02-28T14:53:00.151+0800 I NETWORK  [conn189] received client metadata from 127.0.0.1:53655 conn189: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:00.152+0800 I -        [conn189] end connection 127.0.0.1:53655 (11 connections now open)
+2018-02-28T14:53:10.216+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53672 #190 (11 connections now open)
+2018-02-28T14:53:10.216+0800 I NETWORK  [conn190] received client metadata from 127.0.0.1:53672 conn190: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:10.216+0800 I -        [conn190] end connection 127.0.0.1:53672 (11 connections now open)
+2018-02-28T14:53:20.237+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53692 #191 (11 connections now open)
+2018-02-28T14:53:20.237+0800 I NETWORK  [conn191] received client metadata from 127.0.0.1:53692 conn191: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:20.237+0800 I -        [conn191] end connection 127.0.0.1:53692 (11 connections now open)
+2018-02-28T14:53:30.268+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53709 #192 (11 connections now open)
+2018-02-28T14:53:30.268+0800 I NETWORK  [conn192] received client metadata from 127.0.0.1:53709 conn192: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:30.270+0800 I -        [conn192] end connection 127.0.0.1:53709 (11 connections now open)
+2018-02-28T14:53:40.294+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53728 #193 (11 connections now open)
+2018-02-28T14:53:40.294+0800 I NETWORK  [conn193] received client metadata from 127.0.0.1:53728 conn193: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:40.294+0800 I -        [conn193] end connection 127.0.0.1:53728 (11 connections now open)
+2018-02-28T14:53:50.575+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53747 #194 (11 connections now open)
+2018-02-28T14:53:50.575+0800 I NETWORK  [conn194] received client metadata from 127.0.0.1:53747 conn194: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:53:50.577+0800 I -        [conn194] end connection 127.0.0.1:53747 (11 connections now open)
+2018-02-28T14:54:00.615+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53766 #195 (11 connections now open)
+2018-02-28T14:54:00.615+0800 I NETWORK  [conn195] received client metadata from 127.0.0.1:53766 conn195: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:00.616+0800 I -        [conn195] end connection 127.0.0.1:53766 (11 connections now open)
+2018-02-28T14:54:10.657+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53784 #196 (11 connections now open)
+2018-02-28T14:54:10.657+0800 I NETWORK  [conn196] received client metadata from 127.0.0.1:53784 conn196: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:10.658+0800 I -        [conn196] end connection 127.0.0.1:53784 (11 connections now open)
+2018-02-28T14:54:20.681+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53803 #197 (11 connections now open)
+2018-02-28T14:54:20.681+0800 I NETWORK  [conn197] received client metadata from 127.0.0.1:53803 conn197: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:20.699+0800 I -        [conn197] end connection 127.0.0.1:53803 (11 connections now open)
+2018-02-28T14:54:30.731+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53821 #198 (11 connections now open)
+2018-02-28T14:54:30.731+0800 I NETWORK  [conn198] received client metadata from 127.0.0.1:53821 conn198: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:30.732+0800 I -        [conn198] end connection 127.0.0.1:53821 (11 connections now open)
+2018-02-28T14:54:40.754+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53838 #199 (11 connections now open)
+2018-02-28T14:54:40.754+0800 I NETWORK  [conn199] received client metadata from 127.0.0.1:53838 conn199: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:40.755+0800 I -        [conn199] end connection 127.0.0.1:53838 (11 connections now open)
+2018-02-28T14:54:50.996+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53855 #200 (11 connections now open)
+2018-02-28T14:54:50.996+0800 I NETWORK  [conn200] received client metadata from 127.0.0.1:53855 conn200: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:54:50.997+0800 I -        [conn200] end connection 127.0.0.1:53855 (11 connections now open)
+2018-02-28T14:55:01.031+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53872 #201 (11 connections now open)
+2018-02-28T14:55:01.031+0800 I NETWORK  [conn201] received client metadata from 127.0.0.1:53872 conn201: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:01.032+0800 I -        [conn201] end connection 127.0.0.1:53872 (11 connections now open)
+2018-02-28T14:55:11.061+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53891 #202 (11 connections now open)
+2018-02-28T14:55:11.061+0800 I NETWORK  [conn202] received client metadata from 127.0.0.1:53891 conn202: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:11.061+0800 I -        [conn202] end connection 127.0.0.1:53891 (11 connections now open)
+2018-02-28T14:55:21.088+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53912 #203 (11 connections now open)
+2018-02-28T14:55:21.088+0800 I NETWORK  [conn203] received client metadata from 127.0.0.1:53912 conn203: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:21.089+0800 I -        [conn203] end connection 127.0.0.1:53912 (11 connections now open)
+2018-02-28T14:55:31.108+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53930 #204 (11 connections now open)
+2018-02-28T14:55:31.108+0800 I NETWORK  [conn204] received client metadata from 127.0.0.1:53930 conn204: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:31.109+0800 I -        [conn204] end connection 127.0.0.1:53930 (11 connections now open)
+2018-02-28T14:55:41.155+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53949 #205 (11 connections now open)
+2018-02-28T14:55:41.155+0800 I NETWORK  [conn205] received client metadata from 127.0.0.1:53949 conn205: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:41.156+0800 I -        [conn205] end connection 127.0.0.1:53949 (11 connections now open)
+2018-02-28T14:55:51.184+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53969 #206 (11 connections now open)
+2018-02-28T14:55:51.188+0800 I NETWORK  [conn206] received client metadata from 127.0.0.1:53969 conn206: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:55:51.188+0800 I -        [conn206] end connection 127.0.0.1:53969 (11 connections now open)
+2018-02-28T14:56:01.261+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53988 #207 (11 connections now open)
+2018-02-28T14:56:01.267+0800 I NETWORK  [conn207] received client metadata from 127.0.0.1:53988 conn207: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:01.268+0800 I -        [conn207] end connection 127.0.0.1:53988 (11 connections now open)
+2018-02-28T14:56:11.428+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54006 #208 (11 connections now open)
+2018-02-28T14:56:11.430+0800 I NETWORK  [conn208] received client metadata from 127.0.0.1:54006 conn208: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:11.430+0800 I -        [conn208] end connection 127.0.0.1:54006 (11 connections now open)
+2018-02-28T14:56:21.535+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54024 #209 (11 connections now open)
+2018-02-28T14:56:21.541+0800 I NETWORK  [conn209] received client metadata from 127.0.0.1:54024 conn209: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:21.541+0800 I -        [conn209] end connection 127.0.0.1:54024 (11 connections now open)
+2018-02-28T14:56:31.606+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54037 #210 (11 connections now open)
+2018-02-28T14:56:31.606+0800 I NETWORK  [conn210] received client metadata from 127.0.0.1:54037 conn210: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:31.607+0800 I -        [conn210] end connection 127.0.0.1:54037 (11 connections now open)
+2018-02-28T14:56:41.636+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54058 #211 (11 connections now open)
+2018-02-28T14:56:41.637+0800 I NETWORK  [conn211] received client metadata from 127.0.0.1:54058 conn211: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:41.637+0800 I -        [conn211] end connection 127.0.0.1:54058 (11 connections now open)
+2018-02-28T14:56:51.655+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54075 #212 (11 connections now open)
+2018-02-28T14:56:51.655+0800 I NETWORK  [conn212] received client metadata from 127.0.0.1:54075 conn212: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:56:51.655+0800 I -        [conn212] end connection 127.0.0.1:54075 (11 connections now open)
+2018-02-28T14:57:01.684+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54094 #213 (11 connections now open)
+2018-02-28T14:57:01.684+0800 I NETWORK  [conn213] received client metadata from 127.0.0.1:54094 conn213: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:01.685+0800 I -        [conn213] end connection 127.0.0.1:54094 (11 connections now open)
+2018-02-28T14:57:11.770+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54114 #214 (11 connections now open)
+2018-02-28T14:57:11.770+0800 I NETWORK  [conn214] received client metadata from 127.0.0.1:54114 conn214: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:11.771+0800 I -        [conn214] end connection 127.0.0.1:54114 (11 connections now open)
+2018-02-28T14:57:21.818+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54134 #215 (11 connections now open)
+2018-02-28T14:57:21.818+0800 I NETWORK  [conn215] received client metadata from 127.0.0.1:54134 conn215: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:21.818+0800 I -        [conn215] end connection 127.0.0.1:54134 (11 connections now open)
+2018-02-28T14:57:31.842+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54152 #216 (11 connections now open)
+2018-02-28T14:57:31.842+0800 I NETWORK  [conn216] received client metadata from 127.0.0.1:54152 conn216: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:31.843+0800 I -        [conn216] end connection 127.0.0.1:54152 (11 connections now open)
+2018-02-28T14:57:41.910+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54171 #217 (11 connections now open)
+2018-02-28T14:57:41.910+0800 I NETWORK  [conn217] received client metadata from 127.0.0.1:54171 conn217: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:41.911+0800 I -        [conn217] end connection 127.0.0.1:54171 (11 connections now open)
+2018-02-28T14:57:51.941+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54189 #218 (11 connections now open)
+2018-02-28T14:57:51.942+0800 I NETWORK  [conn218] received client metadata from 127.0.0.1:54189 conn218: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:57:51.943+0800 I -        [conn218] end connection 127.0.0.1:54189 (11 connections now open)
+2018-02-28T14:58:01.978+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54204 #219 (11 connections now open)
+2018-02-28T14:58:01.978+0800 I NETWORK  [conn219] received client metadata from 127.0.0.1:54204 conn219: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:01.979+0800 I -        [conn219] end connection 127.0.0.1:54204 (11 connections now open)
+2018-02-28T14:58:11.997+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54221 #220 (11 connections now open)
+2018-02-28T14:58:11.997+0800 I NETWORK  [conn220] received client metadata from 127.0.0.1:54221 conn220: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:11.998+0800 I -        [conn220] end connection 127.0.0.1:54221 (11 connections now open)
+2018-02-28T14:58:22.052+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54241 #221 (11 connections now open)
+2018-02-28T14:58:22.052+0800 I NETWORK  [conn221] received client metadata from 127.0.0.1:54241 conn221: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:22.053+0800 I -        [conn221] end connection 127.0.0.1:54241 (11 connections now open)
+2018-02-28T14:58:32.080+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54261 #222 (11 connections now open)
+2018-02-28T14:58:32.080+0800 I NETWORK  [conn222] received client metadata from 127.0.0.1:54261 conn222: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:32.080+0800 I -        [conn222] end connection 127.0.0.1:54261 (11 connections now open)
+2018-02-28T14:58:42.111+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54281 #223 (11 connections now open)
+2018-02-28T14:58:42.116+0800 I NETWORK  [conn223] received client metadata from 127.0.0.1:54281 conn223: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:42.116+0800 I -        [conn223] end connection 127.0.0.1:54281 (11 connections now open)
+2018-02-28T14:58:52.143+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54299 #224 (11 connections now open)
+2018-02-28T14:58:52.148+0800 I NETWORK  [conn224] received client metadata from 127.0.0.1:54299 conn224: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:58:52.148+0800 I -        [conn224] end connection 127.0.0.1:54299 (11 connections now open)
+2018-02-28T14:59:02.189+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54317 #225 (11 connections now open)
+2018-02-28T14:59:02.189+0800 I NETWORK  [conn225] received client metadata from 127.0.0.1:54317 conn225: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:02.190+0800 I -        [conn225] end connection 127.0.0.1:54317 (11 connections now open)
+2018-02-28T14:59:12.211+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54336 #226 (11 connections now open)
+2018-02-28T14:59:12.212+0800 I NETWORK  [conn226] received client metadata from 127.0.0.1:54336 conn226: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:12.212+0800 I -        [conn226] end connection 127.0.0.1:54336 (11 connections now open)
+2018-02-28T14:59:22.237+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54358 #227 (11 connections now open)
+2018-02-28T14:59:22.240+0800 I NETWORK  [conn227] received client metadata from 127.0.0.1:54358 conn227: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:22.241+0800 I -        [conn227] end connection 127.0.0.1:54358 (11 connections now open)
+2018-02-28T14:59:32.264+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54373 #228 (11 connections now open)
+2018-02-28T14:59:32.268+0800 I NETWORK  [conn228] received client metadata from 127.0.0.1:54373 conn228: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:32.269+0800 I -        [conn228] end connection 127.0.0.1:54373 (11 connections now open)
+2018-02-28T14:59:42.318+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54398 #229 (11 connections now open)
+2018-02-28T14:59:42.319+0800 I NETWORK  [conn229] received client metadata from 127.0.0.1:54398 conn229: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:42.319+0800 I -        [conn229] end connection 127.0.0.1:54398 (11 connections now open)
+2018-02-28T14:59:52.351+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54418 #230 (11 connections now open)
+2018-02-28T14:59:52.352+0800 I NETWORK  [conn230] received client metadata from 127.0.0.1:54418 conn230: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:59:52.353+0800 I -        [conn230] end connection 127.0.0.1:54418 (11 connections now open)
+2018-02-28T15:00:02.377+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54440 #231 (11 connections now open)
+2018-02-28T15:00:02.383+0800 I NETWORK  [conn231] received client metadata from 127.0.0.1:54440 conn231: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:02.383+0800 I -        [conn231] end connection 127.0.0.1:54440 (11 connections now open)
+2018-02-28T15:00:12.417+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54457 #232 (11 connections now open)
+2018-02-28T15:00:12.417+0800 I NETWORK  [conn232] received client metadata from 127.0.0.1:54457 conn232: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:12.418+0800 I -        [conn232] end connection 127.0.0.1:54457 (11 connections now open)
+2018-02-28T15:00:22.459+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54479 #233 (11 connections now open)
+2018-02-28T15:00:22.459+0800 I NETWORK  [conn233] received client metadata from 127.0.0.1:54479 conn233: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:22.460+0800 I -        [conn233] end connection 127.0.0.1:54479 (11 connections now open)
+2018-02-28T15:00:32.486+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54497 #234 (11 connections now open)
+2018-02-28T15:00:32.489+0800 I NETWORK  [conn234] received client metadata from 127.0.0.1:54497 conn234: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:32.490+0800 I -        [conn234] end connection 127.0.0.1:54497 (11 connections now open)
+2018-02-28T15:00:42.512+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54518 #235 (11 connections now open)
+2018-02-28T15:00:42.518+0800 I NETWORK  [conn235] received client metadata from 127.0.0.1:54518 conn235: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:42.519+0800 I -        [conn235] end connection 127.0.0.1:54518 (11 connections now open)
+2018-02-28T15:00:52.558+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54539 #236 (11 connections now open)
+2018-02-28T15:00:52.562+0800 I NETWORK  [conn236] received client metadata from 127.0.0.1:54539 conn236: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:00:52.562+0800 I -        [conn236] end connection 127.0.0.1:54539 (11 connections now open)
+2018-02-28T15:01:02.591+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54555 #237 (11 connections now open)
+2018-02-28T15:01:02.596+0800 I NETWORK  [conn237] received client metadata from 127.0.0.1:54555 conn237: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:02.596+0800 I -        [conn237] end connection 127.0.0.1:54555 (11 connections now open)
+2018-02-28T15:01:12.630+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54574 #238 (11 connections now open)
+2018-02-28T15:01:12.630+0800 I NETWORK  [conn238] received client metadata from 127.0.0.1:54574 conn238: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:12.630+0800 I -        [conn238] end connection 127.0.0.1:54574 (11 connections now open)
+2018-02-28T15:01:22.646+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54592 #239 (11 connections now open)
+2018-02-28T15:01:22.650+0800 I NETWORK  [conn239] received client metadata from 127.0.0.1:54592 conn239: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:22.651+0800 I -        [conn239] end connection 127.0.0.1:54592 (11 connections now open)
+2018-02-28T15:01:32.693+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54610 #240 (11 connections now open)
+2018-02-28T15:01:32.694+0800 I NETWORK  [conn240] received client metadata from 127.0.0.1:54610 conn240: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:32.694+0800 I -        [conn240] end connection 127.0.0.1:54610 (11 connections now open)
+2018-02-28T15:01:42.719+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54630 #241 (11 connections now open)
+2018-02-28T15:01:42.719+0800 I NETWORK  [conn241] received client metadata from 127.0.0.1:54630 conn241: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:42.719+0800 I -        [conn241] end connection 127.0.0.1:54630 (11 connections now open)
+2018-02-28T15:01:52.754+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54651 #242 (11 connections now open)
+2018-02-28T15:01:52.754+0800 I NETWORK  [conn242] received client metadata from 127.0.0.1:54651 conn242: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:01:52.754+0800 I -        [conn242] end connection 127.0.0.1:54651 (11 connections now open)
+2018-02-28T15:02:02.790+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54670 #243 (11 connections now open)
+2018-02-28T15:02:02.794+0800 I NETWORK  [conn243] received client metadata from 127.0.0.1:54670 conn243: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:02.795+0800 I -        [conn243] end connection 127.0.0.1:54670 (11 connections now open)
+2018-02-28T15:02:12.832+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54687 #244 (11 connections now open)
+2018-02-28T15:02:12.837+0800 I NETWORK  [conn244] received client metadata from 127.0.0.1:54687 conn244: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:12.837+0800 I -        [conn244] end connection 127.0.0.1:54687 (11 connections now open)
+2018-02-28T15:02:22.864+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54706 #245 (11 connections now open)
+2018-02-28T15:02:22.865+0800 I NETWORK  [conn245] received client metadata from 127.0.0.1:54706 conn245: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:22.865+0800 I -        [conn245] end connection 127.0.0.1:54706 (11 connections now open)
+2018-02-28T15:02:32.892+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54719 #246 (11 connections now open)
+2018-02-28T15:02:32.892+0800 I NETWORK  [conn246] received client metadata from 127.0.0.1:54719 conn246: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:32.892+0800 I -        [conn246] end connection 127.0.0.1:54719 (11 connections now open)
+2018-02-28T15:02:42.926+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54740 #247 (11 connections now open)
+2018-02-28T15:02:42.926+0800 I NETWORK  [conn247] received client metadata from 127.0.0.1:54740 conn247: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:42.926+0800 I -        [conn247] end connection 127.0.0.1:54740 (11 connections now open)
+2018-02-28T15:02:52.947+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54759 #248 (11 connections now open)
+2018-02-28T15:02:52.948+0800 I NETWORK  [conn248] received client metadata from 127.0.0.1:54759 conn248: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:02:52.948+0800 I -        [conn248] end connection 127.0.0.1:54759 (11 connections now open)
+2018-02-28T15:03:02.978+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54779 #249 (11 connections now open)
+2018-02-28T15:03:02.985+0800 I NETWORK  [conn249] received client metadata from 127.0.0.1:54779 conn249: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:02.986+0800 I -        [conn249] end connection 127.0.0.1:54779 (11 connections now open)
+2018-02-28T15:03:13.017+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54798 #250 (11 connections now open)
+2018-02-28T15:03:13.017+0800 I NETWORK  [conn250] received client metadata from 127.0.0.1:54798 conn250: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:13.018+0800 I -        [conn250] end connection 127.0.0.1:54798 (11 connections now open)
+2018-02-28T15:03:23.074+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54817 #251 (11 connections now open)
+2018-02-28T15:03:23.074+0800 I NETWORK  [conn251] received client metadata from 127.0.0.1:54817 conn251: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:23.074+0800 I -        [conn251] end connection 127.0.0.1:54817 (11 connections now open)
+2018-02-28T15:03:33.105+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54834 #252 (11 connections now open)
+2018-02-28T15:03:33.105+0800 I NETWORK  [conn252] received client metadata from 127.0.0.1:54834 conn252: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:33.106+0800 I -        [conn252] end connection 127.0.0.1:54834 (11 connections now open)
+2018-02-28T15:03:43.132+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54854 #253 (11 connections now open)
+2018-02-28T15:03:43.132+0800 I NETWORK  [conn253] received client metadata from 127.0.0.1:54854 conn253: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:43.133+0800 I -        [conn253] end connection 127.0.0.1:54854 (11 connections now open)
+2018-02-28T15:03:53.154+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54871 #254 (11 connections now open)
+2018-02-28T15:03:53.158+0800 I NETWORK  [conn254] received client metadata from 127.0.0.1:54871 conn254: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:03:53.158+0800 I -        [conn254] end connection 127.0.0.1:54871 (11 connections now open)
+2018-02-28T15:04:03.184+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54886 #255 (11 connections now open)
+2018-02-28T15:04:03.187+0800 I NETWORK  [conn255] received client metadata from 127.0.0.1:54886 conn255: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:03.188+0800 I -        [conn255] end connection 127.0.0.1:54886 (11 connections now open)
+2018-02-28T15:04:13.217+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54905 #256 (11 connections now open)
+2018-02-28T15:04:13.217+0800 I NETWORK  [conn256] received client metadata from 127.0.0.1:54905 conn256: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:13.218+0800 I -        [conn256] end connection 127.0.0.1:54905 (11 connections now open)
+2018-02-28T15:04:23.256+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54926 #257 (11 connections now open)
+2018-02-28T15:04:23.256+0800 I NETWORK  [conn257] received client metadata from 127.0.0.1:54926 conn257: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:23.257+0800 I -        [conn257] end connection 127.0.0.1:54926 (11 connections now open)
+2018-02-28T15:04:33.298+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54945 #258 (11 connections now open)
+2018-02-28T15:04:33.303+0800 I NETWORK  [conn258] received client metadata from 127.0.0.1:54945 conn258: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:33.304+0800 I -        [conn258] end connection 127.0.0.1:54945 (11 connections now open)
+2018-02-28T15:04:43.338+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54963 #259 (11 connections now open)
+2018-02-28T15:04:43.343+0800 I NETWORK  [conn259] received client metadata from 127.0.0.1:54963 conn259: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:43.344+0800 I -        [conn259] end connection 127.0.0.1:54963 (11 connections now open)
+2018-02-28T15:04:53.390+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54982 #260 (11 connections now open)
+2018-02-28T15:04:53.395+0800 I NETWORK  [conn260] received client metadata from 127.0.0.1:54982 conn260: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:04:53.395+0800 I -        [conn260] end connection 127.0.0.1:54982 (11 connections now open)
+2018-02-28T15:05:03.432+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55000 #261 (11 connections now open)
+2018-02-28T15:05:03.432+0800 I NETWORK  [conn261] received client metadata from 127.0.0.1:55000 conn261: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:03.432+0800 I -        [conn261] end connection 127.0.0.1:55000 (11 connections now open)
+2018-02-28T15:05:13.457+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55017 #262 (11 connections now open)
+2018-02-28T15:05:13.458+0800 I NETWORK  [conn262] received client metadata from 127.0.0.1:55017 conn262: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:13.458+0800 I -        [conn262] end connection 127.0.0.1:55017 (11 connections now open)
+2018-02-28T15:05:23.545+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55032 #263 (11 connections now open)
+2018-02-28T15:05:23.545+0800 I NETWORK  [conn263] received client metadata from 127.0.0.1:55032 conn263: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:23.545+0800 I -        [conn263] end connection 127.0.0.1:55032 (11 connections now open)
+2018-02-28T15:05:33.579+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55049 #264 (11 connections now open)
+2018-02-28T15:05:33.579+0800 I NETWORK  [conn264] received client metadata from 127.0.0.1:55049 conn264: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:33.580+0800 I -        [conn264] end connection 127.0.0.1:55049 (11 connections now open)
+2018-02-28T15:05:43.617+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55070 #265 (11 connections now open)
+2018-02-28T15:05:43.617+0800 I NETWORK  [conn265] received client metadata from 127.0.0.1:55070 conn265: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:43.618+0800 I -        [conn265] end connection 127.0.0.1:55070 (11 connections now open)
+2018-02-28T15:05:53.653+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55118 #266 (11 connections now open)
+2018-02-28T15:05:53.653+0800 I NETWORK  [conn266] received client metadata from 127.0.0.1:55118 conn266: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:05:53.654+0800 I -        [conn266] end connection 127.0.0.1:55118 (11 connections now open)
+2018-02-28T15:06:03.691+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55140 #267 (11 connections now open)
+2018-02-28T15:06:03.691+0800 I NETWORK  [conn267] received client metadata from 127.0.0.1:55140 conn267: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:03.692+0800 I -        [conn267] end connection 127.0.0.1:55140 (11 connections now open)
+2018-02-28T15:06:13.712+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55158 #268 (11 connections now open)
+2018-02-28T15:06:13.712+0800 I NETWORK  [conn268] received client metadata from 127.0.0.1:55158 conn268: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:13.713+0800 I -        [conn268] end connection 127.0.0.1:55158 (11 connections now open)
+2018-02-28T15:06:23.768+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55178 #269 (11 connections now open)
+2018-02-28T15:06:23.769+0800 I NETWORK  [conn269] received client metadata from 127.0.0.1:55178 conn269: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:23.769+0800 I -        [conn269] end connection 127.0.0.1:55178 (11 connections now open)
+2018-02-28T15:06:34.085+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55196 #270 (11 connections now open)
+2018-02-28T15:06:34.085+0800 I NETWORK  [conn270] received client metadata from 127.0.0.1:55196 conn270: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:34.086+0800 I -        [conn270] end connection 127.0.0.1:55196 (11 connections now open)
+2018-02-28T15:06:44.116+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55215 #271 (11 connections now open)
+2018-02-28T15:06:44.116+0800 I NETWORK  [conn271] received client metadata from 127.0.0.1:55215 conn271: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:44.116+0800 I -        [conn271] end connection 127.0.0.1:55215 (11 connections now open)
+2018-02-28T15:06:54.133+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55233 #272 (11 connections now open)
+2018-02-28T15:06:54.133+0800 I NETWORK  [conn272] received client metadata from 127.0.0.1:55233 conn272: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:06:54.134+0800 I -        [conn272] end connection 127.0.0.1:55233 (11 connections now open)
+2018-02-28T15:07:04.321+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55247 #273 (11 connections now open)
+2018-02-28T15:07:04.321+0800 I NETWORK  [conn273] received client metadata from 127.0.0.1:55247 conn273: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:04.322+0800 I -        [conn273] end connection 127.0.0.1:55247 (11 connections now open)
+2018-02-28T15:07:14.383+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55264 #274 (11 connections now open)
+2018-02-28T15:07:14.383+0800 I NETWORK  [conn274] received client metadata from 127.0.0.1:55264 conn274: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:14.383+0800 I -        [conn274] end connection 127.0.0.1:55264 (11 connections now open)
+2018-02-28T15:07:24.419+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55284 #275 (11 connections now open)
+2018-02-28T15:07:24.419+0800 I NETWORK  [conn275] received client metadata from 127.0.0.1:55284 conn275: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:24.420+0800 I -        [conn275] end connection 127.0.0.1:55284 (11 connections now open)
+2018-02-28T15:07:34.443+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55302 #276 (11 connections now open)
+2018-02-28T15:07:34.443+0800 I NETWORK  [conn276] received client metadata from 127.0.0.1:55302 conn276: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:34.443+0800 I -        [conn276] end connection 127.0.0.1:55302 (11 connections now open)
+2018-02-28T15:07:44.468+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55322 #277 (11 connections now open)
+2018-02-28T15:07:44.469+0800 I NETWORK  [conn277] received client metadata from 127.0.0.1:55322 conn277: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:44.469+0800 I -        [conn277] end connection 127.0.0.1:55322 (11 connections now open)
+2018-02-28T15:07:54.493+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55340 #278 (11 connections now open)
+2018-02-28T15:07:54.493+0800 I NETWORK  [conn278] received client metadata from 127.0.0.1:55340 conn278: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:07:54.494+0800 I -        [conn278] end connection 127.0.0.1:55340 (11 connections now open)
+2018-02-28T15:08:04.523+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55408 #279 (11 connections now open)
+2018-02-28T15:08:04.524+0800 I NETWORK  [conn279] received client metadata from 127.0.0.1:55408 conn279: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:04.525+0800 I -        [conn279] end connection 127.0.0.1:55408 (11 connections now open)
+2018-02-28T15:08:14.560+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55447 #280 (11 connections now open)
+2018-02-28T15:08:14.562+0800 I NETWORK  [conn280] received client metadata from 127.0.0.1:55447 conn280: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:14.562+0800 I -        [conn280] end connection 127.0.0.1:55447 (11 connections now open)
+2018-02-28T15:08:24.596+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55465 #281 (11 connections now open)
+2018-02-28T15:08:24.596+0800 I NETWORK  [conn281] received client metadata from 127.0.0.1:55465 conn281: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:24.597+0800 I -        [conn281] end connection 127.0.0.1:55465 (11 connections now open)
+2018-02-28T15:08:34.620+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55482 #282 (11 connections now open)
+2018-02-28T15:08:34.621+0800 I NETWORK  [conn282] received client metadata from 127.0.0.1:55482 conn282: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:34.622+0800 I -        [conn282] end connection 127.0.0.1:55482 (11 connections now open)
+2018-02-28T15:08:44.649+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55501 #283 (11 connections now open)
+2018-02-28T15:08:44.649+0800 I NETWORK  [conn283] received client metadata from 127.0.0.1:55501 conn283: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:44.653+0800 I -        [conn283] end connection 127.0.0.1:55501 (11 connections now open)
+2018-02-28T15:08:54.689+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55521 #284 (11 connections now open)
+2018-02-28T15:08:54.689+0800 I NETWORK  [conn284] received client metadata from 127.0.0.1:55521 conn284: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:08:54.689+0800 I -        [conn284] end connection 127.0.0.1:55521 (11 connections now open)
+2018-02-28T15:09:04.731+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55545 #285 (11 connections now open)
+2018-02-28T15:09:04.731+0800 I NETWORK  [conn285] received client metadata from 127.0.0.1:55545 conn285: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:04.731+0800 I -        [conn285] end connection 127.0.0.1:55545 (11 connections now open)
+2018-02-28T15:09:14.754+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55562 #286 (11 connections now open)
+2018-02-28T15:09:14.755+0800 I NETWORK  [conn286] received client metadata from 127.0.0.1:55562 conn286: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:14.755+0800 I -        [conn286] end connection 127.0.0.1:55562 (11 connections now open)
+2018-02-28T15:09:24.783+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55582 #287 (11 connections now open)
+2018-02-28T15:09:24.783+0800 I NETWORK  [conn287] received client metadata from 127.0.0.1:55582 conn287: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:24.784+0800 I -        [conn287] end connection 127.0.0.1:55582 (11 connections now open)
+2018-02-28T15:09:34.825+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55601 #288 (11 connections now open)
+2018-02-28T15:09:34.825+0800 I NETWORK  [conn288] received client metadata from 127.0.0.1:55601 conn288: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:34.826+0800 I -        [conn288] end connection 127.0.0.1:55601 (11 connections now open)
+2018-02-28T15:09:44.871+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55620 #289 (11 connections now open)
+2018-02-28T15:09:44.872+0800 I NETWORK  [conn289] received client metadata from 127.0.0.1:55620 conn289: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:44.872+0800 I -        [conn289] end connection 127.0.0.1:55620 (11 connections now open)
+2018-02-28T15:09:54.905+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55637 #290 (11 connections now open)
+2018-02-28T15:09:54.912+0800 I NETWORK  [conn290] received client metadata from 127.0.0.1:55637 conn290: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:09:54.912+0800 I -        [conn290] end connection 127.0.0.1:55637 (11 connections now open)
+2018-02-28T15:10:04.942+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55654 #291 (11 connections now open)
+2018-02-28T15:10:04.951+0800 I NETWORK  [conn291] received client metadata from 127.0.0.1:55654 conn291: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:04.952+0800 I -        [conn291] end connection 127.0.0.1:55654 (11 connections now open)
+2018-02-28T15:10:14.984+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55670 #292 (11 connections now open)
+2018-02-28T15:10:14.984+0800 I NETWORK  [conn292] received client metadata from 127.0.0.1:55670 conn292: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:14.984+0800 I -        [conn292] end connection 127.0.0.1:55670 (11 connections now open)
+2018-02-28T15:10:25.013+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55688 #293 (11 connections now open)
+2018-02-28T15:10:25.014+0800 I NETWORK  [conn293] received client metadata from 127.0.0.1:55688 conn293: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:25.014+0800 I -        [conn293] end connection 127.0.0.1:55688 (11 connections now open)
+2018-02-28T15:10:35.056+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55706 #294 (11 connections now open)
+2018-02-28T15:10:35.056+0800 I NETWORK  [conn294] received client metadata from 127.0.0.1:55706 conn294: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:35.056+0800 I -        [conn294] end connection 127.0.0.1:55706 (11 connections now open)
+2018-02-28T15:10:45.088+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55727 #295 (11 connections now open)
+2018-02-28T15:10:45.088+0800 I NETWORK  [conn295] received client metadata from 127.0.0.1:55727 conn295: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:45.089+0800 I -        [conn295] end connection 127.0.0.1:55727 (11 connections now open)
+2018-02-28T15:10:55.114+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55746 #296 (11 connections now open)
+2018-02-28T15:10:55.114+0800 I NETWORK  [conn296] received client metadata from 127.0.0.1:55746 conn296: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:10:55.115+0800 I -        [conn296] end connection 127.0.0.1:55746 (11 connections now open)
+2018-02-28T15:11:05.217+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55765 #297 (11 connections now open)
+2018-02-28T15:11:05.218+0800 I NETWORK  [conn297] received client metadata from 127.0.0.1:55765 conn297: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:05.218+0800 I -        [conn297] end connection 127.0.0.1:55765 (11 connections now open)
+2018-02-28T15:11:15.255+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55800 #298 (11 connections now open)
+2018-02-28T15:11:15.255+0800 I NETWORK  [conn298] received client metadata from 127.0.0.1:55800 conn298: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:15.256+0800 I -        [conn298] end connection 127.0.0.1:55800 (11 connections now open)
+2018-02-28T15:11:25.286+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55819 #299 (11 connections now open)
+2018-02-28T15:11:25.286+0800 I NETWORK  [conn299] received client metadata from 127.0.0.1:55819 conn299: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:25.286+0800 I -        [conn299] end connection 127.0.0.1:55819 (11 connections now open)
+2018-02-28T15:11:35.314+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55835 #300 (11 connections now open)
+2018-02-28T15:11:35.315+0800 I NETWORK  [conn300] received client metadata from 127.0.0.1:55835 conn300: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:35.315+0800 I -        [conn300] end connection 127.0.0.1:55835 (11 connections now open)
+2018-02-28T15:11:45.366+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55856 #301 (11 connections now open)
+2018-02-28T15:11:45.366+0800 I NETWORK  [conn301] received client metadata from 127.0.0.1:55856 conn301: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:45.367+0800 I -        [conn301] end connection 127.0.0.1:55856 (11 connections now open)
+2018-02-28T15:11:55.398+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55886 #302 (11 connections now open)
+2018-02-28T15:11:55.398+0800 I NETWORK  [conn302] received client metadata from 127.0.0.1:55886 conn302: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T15:11:55.399+0800 I -        [conn302] end connection 127.0.0.1:55886 (11 connections now open)

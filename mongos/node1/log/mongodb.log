@@ -1,0 +1,74 @@
+2018-02-28T14:22:06.588+0800 I CONTROL  [main] 
+2018-02-28T14:22:06.588+0800 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2018-02-28T14:22:06.588+0800 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T14:22:06.589+0800 I CONTROL  [main] 
+2018-02-28T14:22:06.589+0800 I SHARDING [mongosMain] mongos version v3.4.7
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T14:22:06.589+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] db version v3.4.7
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T14:22:06.590+0800 I CONTROL  [mongosMain] options: { config: "mongodb.config", net: { bindIp: "127.0.0.1", port: 30000 }, processManagement: { fork: true }, sharding: { configDB: "configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/mongos/node1/log/mongodb.log" } }
+2018-02-28T14:22:06.601+0800 I NETWORK  [mongosMain] Starting new replica set monitor for configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003
+2018-02-28T14:22:06.603+0800 I SHARDING [thread1] creating distributed lock ping thread for process kieren.local:30000:1519798926:8678988166097257953 (sleeping for 30000ms)
+2018-02-28T14:22:06.605+0800 I NETWORK  [mongosMain] Successfully connected to 127.0.0.1:28003 (1 connections now open to 127.0.0.1:28003 with a 5 second timeout)
+2018-02-28T14:22:06.605+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:28001 (1 connections now open to 127.0.0.1:28001 with a 5 second timeout)
+2018-02-28T14:22:06.606+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:22:06.606+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T14:22:06.607+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T14:22:06.608+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T14:22:06.637+0800 I NETWORK  [shard registry reload] Successfully connected to 127.0.0.1:28002 (1 connections now open to 127.0.0.1:28002 with a 5 second timeout)
+2018-02-28T14:22:06.637+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:22:06.638+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T14:22:06.671+0800 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2018-02-28T14:22:08.609+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28002
+2018-02-28T14:22:08.610+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28002, took 1ms (1 connections now open to 127.0.0.1:28002)
+2018-02-28T14:22:08.612+0800 I NETWORK  [thread2] waiting for connections on port 30000
+2018-02-28T14:22:37.713+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50227 #1 (1 connection now open)
+2018-02-28T14:22:37.717+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:50227 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T14:23:08.616+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:24:16.751+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:24:16.767+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 16ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T14:24:17.024+0800 I NETWORK  [conn1] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T14:24:17.025+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T14:24:17.027+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T14:24:17.028+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T14:24:24.377+0800 I NETWORK  [conn1] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T14:24:24.378+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T14:24:24.379+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T14:24:24.380+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T14:24:41.792+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:24:41.793+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T14:24:41.808+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:24:41.809+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T14:24:41.813+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:24:41.813+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 0ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T14:24:41.817+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:24:41.817+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 0ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T14:24:41.823+0800 I NETWORK  [conn1] Successfully connected to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 (1 connections now open to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 with a 0 second timeout)
+2018-02-28T14:25:16.771+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:28:55.175+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:28:55.211+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 36ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T14:29:06.985+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T14:29:06.986+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 1ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T14:29:55.215+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:30:07.113+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28003 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:46:08.042+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:46:08.077+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 35ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T14:47:08.083+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:49:37.863+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T14:49:37.901+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 38ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T14:50:38.249+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28003 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T14:59:38.881+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T14:59:38.932+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 51ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T15:00:38.934+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
