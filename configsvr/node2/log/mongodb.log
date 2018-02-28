@@ -135,3 +135,731 @@
 2018-02-28T14:24:45.371+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
 2018-02-28T14:24:45.371+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
 2018-02-28T14:24:45.372+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T16:25:46.280+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27001)
+2018-02-28T16:25:46.294+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27002)
+2018-02-28T16:25:46.294+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27003)
+2018-02-28T16:25:46.294+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27004)
+2018-02-28T16:25:46.295+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27005)
+2018-02-28T16:25:46.295+0800 I NETWORK  [PeriodicTaskRunner] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27006)
+2018-02-28T16:25:46.536+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.536+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27001 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27001 : couldn't connect to server 127.0.0.1:27001, connection attempt failed
+2018-02-28T16:25:46.537+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.537+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27003 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27003 : couldn't connect to server 127.0.0.1:27003, connection attempt failed
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27002 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27002 : couldn't connect to server 127.0.0.1:27002, connection attempt failed
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set1
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set1 are down. This has happened for 1 checks in a row.
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27004, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27004 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27004 : couldn't connect to server 127.0.0.1:27004, connection attempt failed
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27006, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27006 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27006 : couldn't connect to server 127.0.0.1:27006, connection attempt failed
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27005, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27005 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27005 : couldn't connect to server 127.0.0.1:27005, connection attempt failed
+2018-02-28T16:25:46.538+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set2
+2018-02-28T16:25:46.538+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set2 are down. This has happened for 1 checks in a row.
+2018-02-28T16:25:47.140+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host 127.0.0.1:28001 due to bad connection status; 1 connections to that host remain open
+2018-02-28T16:25:47.140+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to close stream: Socket is not connected
+2018-02-28T16:25:47.140+0800 I -        [conn2] end connection 127.0.0.1:49656 (6 connections now open)
+2018-02-28T16:25:47.140+0800 I REPL     [replication-0] Restarting oplog query due to error: HostUnreachable: End of file. Last fetched optime (with hash): { ts: Timestamp 1519806344000|1, t: 1 }[645882703878964720]. Restarts remaining: 3
+2018-02-28T16:25:47.140+0800 I ASIO     [replication-0] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:25:47.140+0800 I ASIO     [replication-0] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:25:47.140+0800 I ASIO     [replication-0] Failed to close stream: Socket is not connected
+2018-02-28T16:25:47.141+0800 I REPL     [replication-0] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 43056 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:25:47.141+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.141+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.141+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.141+0800 I REPL     [replication-1] Restarting oplog query due to error: HostUnreachable: Connection refused. Last fetched optime (with hash): { ts: Timestamp 1519806344000|1, t: 1 }[645882703878964720]. Restarts remaining: 2
+2018-02-28T16:25:47.141+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.141+0800 I REPL     [replication-1] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 43058 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.142+0800 I REPL     [replication-0] Restarting oplog query due to error: HostUnreachable: Connection refused. Last fetched optime (with hash): { ts: Timestamp 1519806344000|1, t: 1 }[645882703878964720]. Restarts remaining: 1
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.142+0800 I REPL     [replication-0] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 43060 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519806344000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.142+0800 I REPL     [replication-1] Error returned from oplog query (no more query restarts left): HostUnreachable: Connection refused
+2018-02-28T16:25:47.142+0800 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: HostUnreachable: Connection refused
+2018-02-28T16:25:47.142+0800 I REPL     [rsBackgroundSync] could not find member to sync from
+2018-02-28T16:25:47.142+0800 I ASIO     [ReplicationExecutor] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:25:47.142+0800 I ASIO     [ReplicationExecutor] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:25:47.142+0800 I ASIO     [ReplicationExecutor] Failed to close stream: Socket is not connected
+2018-02-28T16:25:47.142+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.143+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.143+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:25:47.143+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:47.144+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:47.144+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:47.144+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:25:49.376+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28001: InvalidSyncSource: Sync source was cleared. Was 127.0.0.1:28001
+2018-02-28T16:39:18.099+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] MongoDB starting : pid=39256 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T16:39:18.121+0800 I CONTROL  [initandlisten] options: { config: "node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T16:39:18.121+0800 W -        [initandlisten] Detected unclean shutdown - /usr/local/mongo-cluster-sharding/configsvr/node2/data/db/mongod.lock is not empty.
+2018-02-28T16:39:18.123+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T16:39:18.123+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-02-28T16:39:18.123+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T16:39:19.752+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T16:39:19.752+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 1959 records totaling to 476974 bytes
+2018-02-28T16:39:19.752+0800 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] 
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] 
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] 
+2018-02-28T16:39:19.821+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T16:39:19.839+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T16:39:19.844+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T16:39:19.844+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T16:39:19.845+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T16:39:19.846+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:39:19.846+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T16:39:19.846+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T16:39:19.846+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T16:39:19.847+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T16:39:19.847+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T16:39:19.847+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T16:39:19.847+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T16:39:19.847+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T16:39:19.847+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T16:39:19.847+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:39:19.848+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T16:39:19.848+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T16:39:19.848+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T16:39:19.848+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T16:39:19.848+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T16:39:19.849+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T16:39:19.849+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:39:19.849+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T16:39:19.849+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T16:39:19.849+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T16:39:19.849+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T16:39:19.849+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T16:39:19.850+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T16:39:19.850+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T16:39:19.850+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T16:39:19.859+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52483 #1 (1 connection now open)
+2018-02-28T16:39:19.859+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:52483 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:39:24.851+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T16:39:25.410+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52506 #2 (2 connections now open)
+2018-02-28T16:39:25.411+0800 I -        [conn2] end connection 127.0.0.1:52506 (2 connections now open)
+2018-02-28T16:39:25.413+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52508 #3 (2 connections now open)
+2018-02-28T16:39:25.413+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:52508 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:39:25.565+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 714ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T16:39:25.565+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T16:39:25.887+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52509 #4 (3 connections now open)
+2018-02-28T16:39:25.887+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:52509 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:39:25.897+0800 I -        [conn1] end connection 127.0.0.1:52483 (3 connections now open)
+2018-02-28T16:39:29.852+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T16:39:29.877+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28001
+2018-02-28T16:39:29.877+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:39:29.878+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:39:29.878+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:39:29.879+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28001, took 1ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T16:39:30.428+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52527 #5 (3 connections now open)
+2018-02-28T16:39:30.428+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:52527 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:39:30.429+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52528 #6 (4 connections now open)
+2018-02-28T16:39:30.429+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:52528 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:39:49.848+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T16:39:49.849+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T16:39:49.850+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T16:39:49.851+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T16:39:49.852+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T16:39:49.853+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T16:39:49.853+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T16:39:49.854+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T16:40:14.819+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52621 #7 (5 connections now open)
+2018-02-28T16:40:14.819+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:52621 conn7: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:40:19.829+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52641 #8 (6 connections now open)
+2018-02-28T16:40:19.829+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:52641 conn8: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:51:49.967+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27001)
+2018-02-28T16:51:49.969+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:51:49.969+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27001 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27001 : couldn't connect to server 127.0.0.1:27001, connection attempt failed
+2018-02-28T16:52:19.976+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:52:47.566+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:54701 #9 (7 connections now open)
+2018-02-28T16:52:47.574+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:54701 conn9: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:52:49.980+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T16:53:49.990+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27002)
+2018-02-28T16:53:49.992+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:49.992+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27002 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27002 : couldn't connect to server 127.0.0.1:27002, connection attempt failed
+2018-02-28T16:53:49.992+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27003)
+2018-02-28T16:53:49.992+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:49.992+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27003 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27003 : couldn't connect to server 127.0.0.1:27003, connection attempt failed
+2018-02-28T16:53:49.992+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set1
+2018-02-28T16:53:49.992+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27004)
+2018-02-28T16:53:49.993+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27004, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27004 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27004 : couldn't connect to server 127.0.0.1:27004, connection attempt failed
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27006)
+2018-02-28T16:53:49.993+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27006, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27006 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27006 : couldn't connect to server 127.0.0.1:27006, connection attempt failed
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27005)
+2018-02-28T16:53:49.993+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27005, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27005 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27005 : couldn't connect to server 127.0.0.1:27005, connection attempt failed
+2018-02-28T16:53:49.993+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set2
+2018-02-28T16:53:49.993+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set2 are down. This has happened for 1 checks in a row.
+2018-02-28T16:53:52.766+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host 127.0.0.1:28001 due to bad connection status; 1 connections to that host remain open
+2018-02-28T16:53:52.766+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to close stream: Socket is not connected
+2018-02-28T16:53:52.766+0800 I -        [conn4] end connection 127.0.0.1:52509 (7 connections now open)
+2018-02-28T16:53:52.766+0800 I REPL     [replication-1] Restarting oplog query due to error: HostUnreachable: End of file. Last fetched optime (with hash): { ts: Timestamp 1519808030000|2, t: 2 }[6840018094162003489]. Restarts remaining: 3
+2018-02-28T16:53:52.766+0800 I ASIO     [replication-1] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:53:52.766+0800 I ASIO     [replication-1] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:53:52.766+0800 I ASIO     [replication-1] Failed to close stream: Socket is not connected
+2018-02-28T16:53:52.766+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.766+0800 I REPL     [replication-1] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 4895 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.767+0800 I REPL     [replication-0] Restarting oplog query due to error: HostUnreachable: Connection refused. Last fetched optime (with hash): { ts: Timestamp 1519808030000|2, t: 2 }[6840018094162003489]. Restarts remaining: 2
+2018-02-28T16:53:52.767+0800 I REPL     [replication-0] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 4897 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.767+0800 I REPL     [replication-1] Restarting oplog query due to error: HostUnreachable: Connection refused. Last fetched optime (with hash): { ts: Timestamp 1519808030000|2, t: 2 }[6840018094162003489]. Restarts remaining: 1
+2018-02-28T16:53:52.767+0800 I REPL     [replication-1] Scheduled new oplog query Fetcher source: 127.0.0.1:28001 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } query metadata: { $replData: 1, $oplogQueryData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 65000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 4899 -- target:127.0.0.1:28001 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1519808030000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 2 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.767+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.767+0800 I REPL     [replication-0] Error returned from oplog query (no more query restarts left): HostUnreachable: Connection refused
+2018-02-28T16:53:52.767+0800 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: HostUnreachable: Connection refused
+2018-02-28T16:53:52.767+0800 I REPL     [rsBackgroundSync] could not find member to sync from
+2018-02-28T16:53:52.767+0800 I ASIO     [ReplicationExecutor] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:53:52.767+0800 I ASIO     [ReplicationExecutor] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:53:52.768+0800 I ASIO     [ReplicationExecutor] Failed to close stream: Socket is not connected
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.768+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.768+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:52.768+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:52.768+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:55.683+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28001: InvalidSyncSource: Sync source was cleared. Was 127.0.0.1:28001
+2018-02-28T16:53:57.772+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:57.773+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:57.773+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:57.773+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:53:57.774+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:53:57.774+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:53:57.774+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28001; HostUnreachable: Connection refused
+2018-02-28T16:53:59.757+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T16:53:59.757+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-02-28T16:53:59.757+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-02-28T16:53:59.757+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2018-02-28T16:53:59.757+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28002.sock
+2018-02-28T16:53:59.757+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-02-28T16:53:59.757+0800 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-02-28T16:53:59.757+0800 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-02-28T16:53:59.757+0800 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-02-28T16:53:59.757+0800 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-02-28T16:53:59.791+0800 I REPL     [signalProcessingThread] Stopping replication snapshot thread
+2018-02-28T16:53:59.791+0800 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-02-28T16:53:59.792+0800 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2018-02-28T16:53:59.792+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-02-28T16:53:59.795+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-02-28T16:54:00.080+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-02-28T16:54:00.080+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-02-28T16:54:00.081+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:14:39.793+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] MongoDB starting : pid=41513 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T17:14:39.816+0800 I CONTROL  [initandlisten] options: { config: "node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T17:14:39.818+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T17:14:39.818+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T17:14:40.949+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T17:14:40.949+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2183 records totaling to 531801 bytes
+2018-02-28T17:14:40.949+0800 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:14:41.133+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T17:14:41.217+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T17:14:41.223+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T17:14:41.223+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T17:14:41.223+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T17:14:41.225+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T17:14:41.225+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T17:14:41.226+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T17:14:41.226+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T17:14:41.226+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T17:14:41.226+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:14:41.226+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:14:41.226+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:14:41.227+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:14:41.227+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:14:41.227+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:14:41.227+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:14:41.228+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:14:41.228+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:14:41.228+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:14:41.228+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:14:41.354+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64058 #1 (1 connection now open)
+2018-02-28T17:14:41.354+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:64058 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:14:46.232+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:14:46.455+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64073 #2 (2 connections now open)
+2018-02-28T17:14:46.456+0800 I -        [conn2] end connection 127.0.0.1:64073 (2 connections now open)
+2018-02-28T17:14:46.457+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64075 #3 (2 connections now open)
+2018-02-28T17:14:46.457+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:64075 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:14:46.543+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 311ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:14:46.543+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T17:14:51.234+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T17:14:51.250+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28001
+2018-02-28T17:14:51.250+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:14:51.252+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:14:51.253+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:14:51.254+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28001, took 1ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T17:14:51.466+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64094 #4 (3 connections now open)
+2018-02-28T17:14:51.466+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:64094 conn4: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:14:51.468+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64095 #5 (4 connections now open)
+2018-02-28T17:14:51.468+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:64095 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:15:11.227+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:15:11.227+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:15:11.227+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:15:11.228+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:15:11.228+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:15:11.229+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:15:11.230+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:15:11.230+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:15:56.569+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64230 #6 (5 connections now open)
+2018-02-28T17:15:56.570+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:64230 conn6: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:15:58.576+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64244 #7 (6 connections now open)
+2018-02-28T17:15:58.577+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:64244 conn7: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:27:52.180+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:27:52.180+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-02-28T17:27:52.180+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-02-28T17:27:52.181+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2018-02-28T17:27:52.182+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28002.sock
+2018-02-28T17:27:52.182+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-02-28T17:27:52.182+0800 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-02-28T17:27:52.182+0800 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-02-28T17:27:52.182+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28001: CallbackCanceled: Reporter no longer valid
+2018-02-28T17:27:52.182+0800 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-02-28T17:27:52.182+0800 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-02-28T17:27:52.182+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host 127.0.0.1:28001 due to bad connection status; 1 connections to that host remain open
+2018-02-28T17:27:52.182+0800 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-02-28T17:27:52.185+0800 I REPL     [signalProcessingThread] Stopping replication snapshot thread
+2018-02-28T17:27:52.185+0800 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-02-28T17:27:52.186+0800 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2018-02-28T17:27:52.187+0800 I -        [conn7] end connection 127.0.0.1:64244 (6 connections now open)
+2018-02-28T17:27:52.187+0800 I -        [conn6] end connection 127.0.0.1:64230 (5 connections now open)
+2018-02-28T17:27:52.188+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-02-28T17:27:52.252+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-02-28T17:27:52.570+0800 I -        [conn5] end connection 127.0.0.1:64095 (4 connections now open)
+2018-02-28T17:27:52.570+0800 I -        [conn3] end connection 127.0.0.1:64075 (3 connections now open)
+2018-02-28T17:27:52.883+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-02-28T17:27:52.884+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-02-28T17:27:52.884+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:27:52.884+0800 I CONTROL  [initandlisten] shutting down with code:0
+2018-02-28T17:36:10.705+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] MongoDB starting : pid=42812 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T17:36:10.747+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T17:36:10.748+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/mongo-cluster-sharding/configsvr/node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T17:36:10.750+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T17:36:10.750+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T17:36:12.051+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T17:36:12.051+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2383 records totaling to 581468 bytes
+2018-02-28T17:36:12.052+0800 I STORAGE  [initandlisten] Sampling from the oplog between Feb 28 14:17:45:1 and Feb 28 17:27:43:2 to determine where to place markers for truncation
+2018-02-28T17:36:12.052+0800 I STORAGE  [initandlisten] Taking 0 samples and assuming that each section of oplog contains approximately 75008 records totaling to 18302455 bytes
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:36:12.104+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T17:36:12.188+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T17:36:12.193+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T17:36:12.194+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T17:36:12.194+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T17:36:12.195+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T17:36:12.196+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T17:36:12.197+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T17:36:12.197+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:36:12.197+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:12.197+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T17:36:12.197+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:36:12.198+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:36:12.198+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:36:12.198+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:12.198+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:36:12.198+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:36:12.198+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:36:12.198+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:36:12.199+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:12.199+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T17:36:12.199+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:36:12.199+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:36:12.199+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:36:13.715+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50216 #1 (1 connection now open)
+2018-02-28T17:36:13.716+0800 I -        [conn1] end connection 127.0.0.1:50216 (1 connection now open)
+2018-02-28T17:36:13.788+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50218 #2 (1 connection now open)
+2018-02-28T17:36:13.788+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:50218 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:36:15.653+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50226 #3 (2 connections now open)
+2018-02-28T17:36:15.654+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:50226 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:36:17.201+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:17.202+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:36:17.202+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T17:36:22.203+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T17:36:27.235+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28003
+2018-02-28T17:36:27.235+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:27.236+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:36:27.237+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:36:27.238+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 1ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T17:36:42.196+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:36:42.196+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:36:42.197+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:36:42.197+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:36:42.198+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:36:42.199+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:36:42.199+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:36:42.200+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:37:38.017+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:37:38.017+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-02-28T17:37:38.017+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-02-28T17:37:38.019+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2018-02-28T17:37:38.019+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28002.sock
+2018-02-28T17:37:38.019+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-02-28T17:37:38.019+0800 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-02-28T17:37:38.019+0800 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-02-28T17:37:38.019+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28003: CallbackCanceled: Reporter no longer valid
+2018-02-28T17:37:38.020+0800 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-02-28T17:37:38.020+0800 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-02-28T17:37:38.020+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host 127.0.0.1:28003 due to bad connection status; 1 connections to that host remain open
+2018-02-28T17:37:38.022+0800 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-02-28T17:37:38.024+0800 I REPL     [signalProcessingThread] Stopping replication snapshot thread
+2018-02-28T17:37:38.024+0800 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-02-28T17:37:38.028+0800 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2018-02-28T17:37:38.028+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-02-28T17:37:38.046+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-02-28T17:37:38.601+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-02-28T17:37:38.602+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-02-28T17:37:38.602+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:37:38.602+0800 I CONTROL  [initandlisten] shutting down with code:0
+2018-02-28T17:37:56.016+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] MongoDB starting : pid=42961 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T17:37:56.045+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/mongo-cluster-sharding/configsvr/node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T17:37:56.076+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T17:37:56.076+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T17:37:57.455+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T17:37:57.455+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2397 records totaling to 585419 bytes
+2018-02-28T17:37:57.473+0800 I STORAGE  [initandlisten] Sampling from the oplog between Feb 28 14:17:45:1 and Feb 28 17:37:34:1 to determine where to place markers for truncation
+2018-02-28T17:37:57.473+0800 I STORAGE  [initandlisten] Taking 0 samples and assuming that each section of oplog contains approximately 74940 records totaling to 18302586 bytes
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:37:57.643+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T17:37:57.692+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T17:37:57.697+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T17:37:57.697+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T17:37:57.697+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T17:37:57.699+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T17:37:57.699+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T17:37:57.700+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:37:57.700+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T17:37:57.700+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:37:57.700+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:37:57.701+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:37:57.701+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:37:57.701+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:37:57.702+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:37:57.702+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:37:57.702+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:37:57.702+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:37:57.702+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T17:37:59.446+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50502 #1 (1 connection now open)
+2018-02-28T17:37:59.446+0800 I -        [conn1] end connection 127.0.0.1:50502 (1 connection now open)
+2018-02-28T17:37:59.448+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50504 #2 (1 connection now open)
+2018-02-28T17:37:59.448+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:50504 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:38:00.982+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50506 #3 (2 connections now open)
+2018-02-28T17:38:00.983+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:50506 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:38:02.706+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:38:02.707+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:38:02.707+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T17:38:07.708+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T17:38:12.757+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28003
+2018-02-28T17:38:12.757+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:38:12.757+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 0ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:38:12.758+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:38:12.759+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 1ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T17:38:27.703+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:38:27.703+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:38:27.704+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:38:27.704+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:38:27.705+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:38:27.706+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:38:27.707+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:38:27.707+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:39:58.472+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:39:58.472+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-02-28T17:39:58.472+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-02-28T17:39:58.472+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2018-02-28T17:39:58.473+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28002.sock
+2018-02-28T17:39:58.473+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-02-28T17:39:58.473+0800 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-02-28T17:39:58.473+0800 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-02-28T17:39:58.473+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28003: CallbackCanceled: Reporter no longer valid
+2018-02-28T17:39:58.473+0800 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-02-28T17:39:58.473+0800 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-02-28T17:39:58.473+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host 127.0.0.1:28003 due to bad connection status; 1 connections to that host remain open
+2018-02-28T17:39:58.475+0800 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-02-28T17:39:58.477+0800 I REPL     [signalProcessingThread] Stopping replication snapshot thread
+2018-02-28T17:39:58.477+0800 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-02-28T17:39:58.478+0800 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2018-02-28T17:39:58.478+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-02-28T17:39:58.481+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-02-28T17:39:59.398+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-02-28T17:39:59.409+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-02-28T17:39:59.409+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:40:02.025+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] MongoDB starting : pid=43120 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T17:40:02.050+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/mongo-cluster-sharding/configsvr/node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T17:40:02.050+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T17:40:02.050+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T17:40:03.786+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T17:40:03.786+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2416 records totaling to 590812 bytes
+2018-02-28T17:40:03.786+0800 I STORAGE  [initandlisten] Sampling from the oplog between Feb 28 14:17:45:1 and Feb 28 17:39:56:1 to determine where to place markers for truncation
+2018-02-28T17:40:03.786+0800 I STORAGE  [initandlisten] Taking 0 samples and assuming that each section of oplog contains approximately 74844 records totaling to 18302455 bytes
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:03.817+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T17:40:03.825+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T17:40:03.831+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T17:40:03.831+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T17:40:03.831+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T17:40:03.833+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T17:40:03.833+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T17:40:03.833+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T17:40:03.833+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:40:03.834+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:03.834+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T17:40:03.834+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:03.834+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:03.834+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:03.834+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:03.835+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:03.835+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:03.835+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:03.835+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:05.539+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50804 #1 (1 connection now open)
+2018-02-28T17:40:05.539+0800 I -        [conn1] end connection 127.0.0.1:50804 (1 connection now open)
+2018-02-28T17:40:05.541+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50806 #2 (1 connection now open)
+2018-02-28T17:40:05.541+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:50806 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:06.088+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50808 #3 (2 connections now open)
+2018-02-28T17:40:06.088+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:50808 conn3: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:06.090+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50811 #4 (3 connections now open)
+2018-02-28T17:40:06.090+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:50811 conn4: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:07.012+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50812 #5 (4 connections now open)
+2018-02-28T17:40:07.012+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:50812 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:08.841+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:08.842+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:40:08.842+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T17:40:13.842+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T17:40:15.728+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:40:15.728+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-02-28T17:40:15.728+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-02-28T17:40:15.729+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2018-02-28T17:40:15.729+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28002.sock
+2018-02-28T17:40:15.729+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-02-28T17:40:15.729+0800 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-02-28T17:40:15.729+0800 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-02-28T17:40:15.730+0800 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-02-28T17:40:15.730+0800 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-02-28T17:40:15.731+0800 I -        [conn3] end connection 127.0.0.1:50808 (4 connections now open)
+2018-02-28T17:40:15.886+0800 I REPL     [signalProcessingThread] Stopping replication snapshot thread
+2018-02-28T17:40:15.886+0800 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-02-28T17:40:15.886+0800 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2018-02-28T17:40:15.886+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-02-28T17:40:15.887+0800 I COMMAND  [conn4] command config.$cmd command: find { find: "version", readConcern: { level: "majority", afterOpTime: { ts: Timestamp 0|0, t: -1 } }, maxTimeMS: 30000 } exception: interrupted at shutdown code:11600 numYields:0 reslen:370 locks:{} protocol:op_command 9797ms
+2018-02-28T17:40:15.887+0800 I -        [conn4] end connection 127.0.0.1:50811 (3 connections now open)
+2018-02-28T17:40:15.888+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-02-28T17:40:16.072+0800 I -        [conn2] end connection 127.0.0.1:50806 (2 connections now open)
+2018-02-28T17:40:16.159+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-02-28T17:40:16.160+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-02-28T17:40:16.160+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:40:16.160+0800 I CONTROL  [initandlisten] shutting down with code:0
+2018-02-28T17:40:47.187+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:40:47.211+0800 I CONTROL  [initandlisten] MongoDB starting : pid=43205 port=28002 dbpath=/usr/local/mongo-cluster-sharding/configsvr/node2/data/db 64-bit host=kieren.local
+2018-02-28T17:40:47.211+0800 I CONTROL  [initandlisten] db version v3.4.7
+2018-02-28T17:40:47.211+0800 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:47.211+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten] allocator: system
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T17:40:47.212+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/mongo-cluster-sharding/configsvr/node2/mongodb.conf", net: { bindIp: "127.0.0.1", port: 28002 }, processManagement: { fork: true }, replication: { replSet: "configset" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "/usr/local/mongo-cluster-sharding/configsvr/node2/data/db" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/configsvr/node2/log/mongodb.log" } }
+2018-02-28T17:40:47.212+0800 I -        [initandlisten] Detected data files in /usr/local/mongo-cluster-sharding/configsvr/node2/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T17:40:47.212+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-02-28T17:40:49.059+0800 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-02-28T17:40:49.059+0800 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2416 records totaling to 590812 bytes
+2018-02-28T17:40:49.059+0800 I STORAGE  [initandlisten] Sampling from the oplog between Feb 28 14:17:45:1 and Feb 28 17:39:56:1 to determine where to place markers for truncation
+2018-02-28T17:40:49.059+0800 I STORAGE  [initandlisten] Taking 0 samples and assuming that each section of oplog contains approximately 74844 records totaling to 18302455 bytes
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] 
+2018-02-28T17:40:49.091+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-02-28T17:40:49.099+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/local/mongo-cluster-sharding/configsvr/node2/data/db/diagnostic.data'
+2018-02-28T17:40:49.104+0800 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2018-02-28T17:40:49.104+0800 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2018-02-28T17:40:49.105+0800 I NETWORK  [thread2] waiting for connections on port 28002
+2018-02-28T17:40:49.106+0800 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:49.106+0800 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "configset", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 1, host: "127.0.0.1:28001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "127.0.0.1:28002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "127.0.0.1:28003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a9649899ac5bc9267871b60') } }
+2018-02-28T17:40:49.106+0800 I REPL     [replExecDBWorker-0] This node is 127.0.0.1:28002 in the config
+2018-02-28T17:40:49.106+0800 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2018-02-28T17:40:49.106+0800 I REPL     [replExecDBWorker-0] Starting replication snapshot thread
+2018-02-28T17:40:49.106+0800 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2018-02-28T17:40:49.107+0800 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2018-02-28T17:40:49.107+0800 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2018-02-28T17:40:49.107+0800 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2018-02-28T17:40:49.107+0800 I REPL     [rsSync] transition to RECOVERING
+2018-02-28T17:40:49.107+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:40:49.107+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:49.107+0800 I REPL     [rsSync] transition to SECONDARY
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:49.108+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:49.108+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:49.108+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:49.109+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:49.109+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state SECONDARY
+2018-02-28T17:40:49.109+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to 127.0.0.1:28003 - HostUnreachable: Connection refused
+2018-02-28T17:40:49.109+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to 127.0.0.1:28003 due to failed operation on a connection
+2018-02-28T17:40:49.109+0800 I REPL     [ReplicationExecutor] Error in heartbeat request to 127.0.0.1:28003; HostUnreachable: Connection refused
+2018-02-28T17:40:50.887+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50982 #1 (1 connection now open)
+2018-02-28T17:40:50.887+0800 I -        [conn1] end connection 127.0.0.1:50982 (1 connection now open)
+2018-02-28T17:40:50.889+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50984 #2 (1 connection now open)
+2018-02-28T17:40:50.889+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:50984 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:50.924+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50986 #3 (2 connections now open)
+2018-02-28T17:40:50.924+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:50986 conn3: { driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:50.927+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50988 #4 (3 connections now open)
+2018-02-28T17:40:50.927+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:50988 conn4: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:52.174+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:50994 #5 (4 connections now open)
+2018-02-28T17:40:52.174+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:50994 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:40:54.111+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:54.111+0800 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to 127.0.0.1:28003, took 0ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:40:54.112+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28003 is now in state SECONDARY
+2018-02-28T17:40:59.113+0800 I REPL     [ReplicationExecutor] Member 127.0.0.1:28001 is now in state PRIMARY
+2018-02-28T17:40:59.135+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28003
+2018-02-28T17:40:59.135+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:59.135+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 0ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:40:59.136+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:59.136+0800 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to 127.0.0.1:28003, took 0ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T17:40:59.139+0800 I REPL     [replication-0] Choosing new sync source because our current sync source, 127.0.0.1:28003, has an OpTime ({ ts: Timestamp 1519810815000|5, t: 6 }) which is not ahead of ours ({ ts: Timestamp 1519810815000|5, t: 6 }), it does not have a sync source, and it's not the primary (sync source does not know the primary)
+2018-02-28T17:40:59.139+0800 I REPL     [replication-0] Canceling oplog query due to OplogQueryMetadata. We have to choose a new sync source. Current source: 127.0.0.1:28003, OpTime { ts: Timestamp 1519810815000|5, t: 6 }, its sync source index:-1
+2018-02-28T17:40:59.139+0800 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source 127.0.0.1:28003 (config version: 1; last applied optime: { ts: Timestamp 1519810815000|5, t: 6 }; sync source index: -1; primary index: -1) is no longer valid
+2018-02-28T17:40:59.139+0800 I REPL     [rsBackgroundSync] could not find member to sync from
+2018-02-28T17:40:59.150+0800 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to 127.0.0.1:28003: InvalidSyncSource: Sync source was cleared. Was 127.0.0.1:28003
+2018-02-28T17:41:04.153+0800 I REPL     [rsBackgroundSync] sync source candidate: 127.0.0.1:28003
+2018-02-28T17:41:04.154+0800 I COMMAND  [conn4] command config.version command: find { find: "version", readConcern: { level: "majority", afterOpTime: { ts: Timestamp 0|0, t: -1 } }, maxTimeMS: 30000 } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 numYields:0 nreturned:1 reslen:439 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 13226ms
+2018-02-28T17:41:09.194+0800 I COMMAND  [conn4] command config.settings command: find { find: "settings", filter: { _id: "balancer" }, readConcern: { level: "majority", afterOpTime: { ts: Timestamp 1519810864000|1, t: 7 } }, limit: 1, maxTimeMS: 30000 } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:354 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 4994ms
+2018-02-28T17:41:19.106+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:41:19.106+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:41:19.107+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:41:19.107+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:41:19.108+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:41:19.109+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:41:19.109+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:41:19.110+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:41:20.999+0800 I COMMAND  [conn4] command config.settings command: find { find: "settings", filter: { _id: "autosplit" }, readConcern: { level: "majority", afterOpTime: { ts: Timestamp 1519810879000|1, t: 7 } }, limit: 1, maxTimeMS: 30000 } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:354 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 1774ms

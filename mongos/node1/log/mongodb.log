@@ -72,3 +72,598 @@
 2018-02-28T14:59:38.881+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
 2018-02-28T14:59:38.932+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 51ms (2 connections now open to 127.0.0.1:28001)
 2018-02-28T15:00:38.934+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T15:23:38.599+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T15:23:38.602+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 3ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T15:24:40.513+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28003 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T15:24:40.552+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T15:24:40.553+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 1ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T15:25:40.593+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28003 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T15:54:42.493+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T15:54:42.496+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 3ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T15:55:42.502+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T15:58:35.447+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T15:58:35.453+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 6ms (2 connections now open to 127.0.0.1:28003)
+2018-02-28T15:59:35.451+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28003 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T16:00:47.570+0800 I SHARDING [conn1] distributed lock 'mytest' acquired for 'enableSharding', ts : 5a9661af23b1b09499a998d8
+2018-02-28T16:00:52.550+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:00:52.551+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:00:52.551+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:00:52.569+0800 I SHARDING [conn1] distributed lock with ts: 5a9661af23b1b09499a998d8' unlocked.
+2018-02-28T16:03:45.173+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:03:45.207+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:03:45.207+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:05:15.063+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:05:15.339+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 277ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:05:15.341+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:05:15.341+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 0ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:05:15.342+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:05:15.343+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:05:15.345+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:05:15.346+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:06:11.792+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:06:11.839+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:06:11.839+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:08:43.226+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:08:43.293+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 67ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T16:09:43.297+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T16:12:17.576+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:12:17.605+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:12:17.605+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:12:26.509+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:12:26.512+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:12:26.513+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:12:34.721+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:12:34.725+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:12:34.726+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:12:49.173+0800 I -        [conn1] end connection 127.0.0.1:50227 (1 connection now open)
+2018-02-28T16:13:08.174+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:63314 #2 (1 connection now open)
+2018-02-28T16:13:08.174+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:63314 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:13:43.596+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:13:43.616+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 20ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T16:13:55.780+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:13:55.783+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 3ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:13:55.784+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:13:55.786+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:13:55.788+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:13:55.789+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:13:55.791+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:13:55.793+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:14:02.741+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:14:02.745+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:14:02.746+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:14:43.624+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T16:17:41.842+0800 I -        [conn2] end connection 127.0.0.1:63314 (1 connection now open)
+2018-02-28T16:25:48.075+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27001)
+2018-02-28T16:25:48.094+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:48.095+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27001 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27001 : couldn't connect to server 127.0.0.1:27001, connection attempt failed
+2018-02-28T16:25:48.096+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27002)
+2018-02-28T16:25:48.096+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:48.096+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27002 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27002 : couldn't connect to server 127.0.0.1:27002, connection attempt failed
+2018-02-28T16:25:48.096+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27003)
+2018-02-28T16:25:48.097+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:48.097+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27003 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27003 : couldn't connect to server 127.0.0.1:27003, connection attempt failed
+2018-02-28T16:25:48.097+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set1
+2018-02-28T16:25:48.097+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set1 are down. This has happened for 1 checks in a row.
+2018-02-28T16:25:49.430+0800 I ASIO     [Uptime reporter] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:25:49.430+0800 I ASIO     [Uptime reporter] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:25:49.430+0800 I ASIO     [Uptime reporter] Failed to close stream: Socket is not connected
+2018-02-28T16:25:49.430+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:25:49.431+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:25:49.431+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:25:49.431+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28001 as failed :: caused by :: HostUnreachable: Connection refused
+2018-02-28T16:25:49.432+0800 I NETWORK  [Uptime reporter] Socket closed remotely, no longer connected (idle 12 secs, remote host 127.0.0.1:28001)
+2018-02-28T16:25:49.432+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:49.432+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:49.935+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:49.936+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:50.439+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:50.440+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:50.944+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:50.945+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:51.450+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:51.451+0800 I NETWORK  [Uptime reporter] Detected bad connection created at 1519798926604665 microSec, clearing pool for 127.0.0.1:28002 of 0 connections
+2018-02-28T16:25:51.451+0800 I NETWORK  [Uptime reporter] Dropping all pooled connections to 127.0.0.1:28002(with timeout of 5 seconds)
+2018-02-28T16:25:51.451+0800 I NETWORK  [Uptime reporter] Ending connection to host 127.0.0.1:28002(with timeout of 5 seconds) due to bad connection status; 0 connections to that host remain open
+2018-02-28T16:25:51.451+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28002 as failed :: caused by :: HostUnreachable: network error while attempting to run command 'ismaster' on host '127.0.0.1:28002' 
+2018-02-28T16:25:51.452+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:51.952+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:51.953+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:51.953+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:52.455+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:52.456+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:52.456+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:52.962+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:52.962+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:52.962+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:53.466+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:53.466+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:53.466+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:53.970+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:53.971+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:53.971+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:54.476+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:54.477+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:54.477+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:54.980+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:54.981+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:54.981+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:55.392+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27004)
+2018-02-28T16:25:55.393+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27004, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.393+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27004 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27004 : couldn't connect to server 127.0.0.1:27004, connection attempt failed
+2018-02-28T16:25:55.393+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27006)
+2018-02-28T16:25:55.394+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27006, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.394+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27006 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27006 : couldn't connect to server 127.0.0.1:27006, connection attempt failed
+2018-02-28T16:25:55.394+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 30 secs, remote host 127.0.0.1:27005)
+2018-02-28T16:25:55.395+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27005, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.395+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27005 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27005 : couldn't connect to server 127.0.0.1:27005, connection attempt failed
+2018-02-28T16:25:55.395+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set2
+2018-02-28T16:25:55.395+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set2 are down. This has happened for 1 checks in a row.
+2018-02-28T16:25:55.486+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.487+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.487+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:55.991+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.992+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:55.992+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:56.496+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:56.497+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:56.497+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:56.999+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:57.000+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:57.000+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:57.501+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:57.501+0800 I NETWORK  [Uptime reporter] Detected bad connection created at 1519798926604665 microSec, clearing pool for 127.0.0.1:28003 of 0 connections
+2018-02-28T16:25:57.501+0800 I NETWORK  [Uptime reporter] Dropping all pooled connections to 127.0.0.1:28003(with timeout of 5 seconds)
+2018-02-28T16:25:57.501+0800 I NETWORK  [Uptime reporter] Ending connection to host 127.0.0.1:28003(with timeout of 5 seconds) due to bad connection status; 0 connections to that host remain open
+2018-02-28T16:25:57.501+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28003 as failed :: caused by :: HostUnreachable: network error while attempting to run command 'ismaster' on host '127.0.0.1:28003' 
+2018-02-28T16:25:57.502+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:57.502+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:57.502+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 1 checks in a row.
+2018-02-28T16:25:58.004+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.004+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.005+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.005+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:58.005+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 2 checks in a row.
+2018-02-28T16:25:58.510+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.511+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.511+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:58.511+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:58.511+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 3 checks in a row.
+2018-02-28T16:25:59.017+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.017+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.018+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.018+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:59.018+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 4 checks in a row.
+2018-02-28T16:25:59.521+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.522+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.522+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:25:59.522+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:25:59.522+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 5 checks in a row.
+2018-02-28T16:26:00.026+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.027+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.027+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.027+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:00.027+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 6 checks in a row.
+2018-02-28T16:26:00.531+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.531+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.532+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:00.532+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:00.532+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 7 checks in a row.
+2018-02-28T16:26:01.036+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.036+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.036+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.036+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:01.036+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 8 checks in a row.
+2018-02-28T16:26:01.541+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.541+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.541+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:01.541+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:01.541+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 9 checks in a row.
+2018-02-28T16:26:02.045+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.045+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.046+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.046+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:02.046+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 10 checks in a row.
+2018-02-28T16:26:02.550+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.550+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.551+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:02.551+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:26:02.551+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 11 checks in a row.
+2018-02-28T16:26:03.054+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:03.055+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:03.055+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:26:03.055+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:40:14.783+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T16:40:14.804+0800 I CONTROL  [main] 
+2018-02-28T16:40:14.804+0800 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2018-02-28T16:40:14.805+0800 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T16:40:14.805+0800 I CONTROL  [main] 
+2018-02-28T16:40:14.805+0800 I SHARDING [mongosMain] mongos version v3.4.7
+2018-02-28T16:40:14.805+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T16:40:14.805+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T16:40:14.805+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T16:40:14.805+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] db version v3.4.7
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T16:40:14.806+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T16:40:14.807+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T16:40:14.807+0800 I CONTROL  [mongosMain] options: { config: "node1/mongodb.config", net: { bindIp: "127.0.0.1", port: 30000 }, processManagement: { fork: true }, sharding: { configDB: "configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/mongos/node1/log/mongodb.log" } }
+2018-02-28T16:40:14.817+0800 I NETWORK  [mongosMain] Starting new replica set monitor for configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003
+2018-02-28T16:40:14.818+0800 I SHARDING [thread1] creating distributed lock ping thread for process kieren.local:30000:1519807214:8485547331262408449 (sleeping for 30000ms)
+2018-02-28T16:40:14.819+0800 I NETWORK  [mongosMain] Successfully connected to 127.0.0.1:28002 (1 connections now open to 127.0.0.1:28002 with a 5 second timeout)
+2018-02-28T16:40:14.819+0800 I NETWORK  [shard registry reload] Successfully connected to 127.0.0.1:28001 (1 connections now open to 127.0.0.1:28001 with a 5 second timeout)
+2018-02-28T16:40:14.819+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:28003 (1 connections now open to 127.0.0.1:28003 with a 5 second timeout)
+2018-02-28T16:40:14.820+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:40:14.820+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:40:14.820+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:40:14.821+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (3 connections now open to 127.0.0.1:28001)
+2018-02-28T16:40:14.821+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (3 connections now open to 127.0.0.1:28001)
+2018-02-28T16:40:14.821+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (3 connections now open to 127.0.0.1:28001)
+2018-02-28T16:40:14.822+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T16:40:14.823+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T16:40:14.824+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T16:40:14.825+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T16:40:14.826+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T16:40:14.837+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T16:40:14.839+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T16:40:14.840+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T16:40:14.846+0800 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2018-02-28T16:40:16.823+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T16:40:16.824+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 1ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T16:40:19.829+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28002
+2018-02-28T16:40:19.830+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28002, took 1ms (1 connections now open to 127.0.0.1:28002)
+2018-02-28T16:40:19.831+0800 I NETWORK  [thread2] waiting for connections on port 30000
+2018-02-28T16:41:14.827+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 2 connections to that host remain open
+2018-02-28T16:41:19.833+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T16:41:37.616+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52783 #1 (1 connection now open)
+2018-02-28T16:41:37.620+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:52783 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:41:49.331+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:41:49.332+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:41:49.334+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:41:49.336+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:41:49.337+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:41:49.338+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:41:49.342+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:41:49.343+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:41:49.346+0800 I NETWORK  [conn1] Successfully connected to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 (1 connections now open to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 with a 0 second timeout)
+2018-02-28T16:42:05.649+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:42:05.653+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:42:05.653+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:42:14.686+0800 I -        [conn1] end connection 127.0.0.1:52783 (1 connection now open)
+2018-02-28T16:42:17.671+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:52864 #2 (1 connection now open)
+2018-02-28T16:42:17.672+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:52864 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:42:19.846+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:42:19.847+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 0ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T16:42:19.880+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:42:19.883+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:42:19.883+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:43:19.851+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T16:47:15.741+0800 I -        [conn2] end connection 127.0.0.1:52864 (1 connection now open)
+2018-02-28T16:47:20.700+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:53805 #3 (1 connection now open)
+2018-02-28T16:47:20.702+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:53805 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:48:26.959+0800 I -        [conn3] end connection 127.0.0.1:53805 (1 connection now open)
+2018-02-28T16:48:37.806+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:53948 #4 (1 connection now open)
+2018-02-28T16:48:37.806+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:53948 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:48:52.598+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:48:52.600+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:48:52.602+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:48:52.602+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 0ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:48:52.604+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:48:52.605+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:48:52.608+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:48:52.610+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T16:49:32.951+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T16:49:32.952+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T16:49:32.952+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T16:49:44.562+0800 I -        [conn4] end connection 127.0.0.1:53948 (1 connection now open)
+2018-02-28T16:51:40.876+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:54356 #5 (1 connection now open)
+2018-02-28T16:51:40.878+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:54356 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T16:51:44.943+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 25 secs, remote host 127.0.0.1:27001)
+2018-02-28T16:51:44.945+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:51:44.946+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27001 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27001 : couldn't connect to server 127.0.0.1:27001, connection attempt failed
+2018-02-28T16:51:52.993+0800 I -        [conn5] end connection 127.0.0.1:54356 (1 connection now open)
+2018-02-28T16:52:14.949+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:52:44.952+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:14.957+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T16:53:44.958+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 25 secs, remote host 127.0.0.1:27002)
+2018-02-28T16:53:44.958+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:44.958+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27002 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27002 : couldn't connect to server 127.0.0.1:27002, connection attempt failed
+2018-02-28T16:53:44.959+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 25 secs, remote host 127.0.0.1:27003)
+2018-02-28T16:53:44.959+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:44.959+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27003 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27003 : couldn't connect to server 127.0.0.1:27003, connection attempt failed
+2018-02-28T16:53:44.959+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set1
+2018-02-28T16:53:44.960+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 25 secs, remote host 127.0.0.1:27004)
+2018-02-28T16:53:44.960+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27004, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:44.960+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27004 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27004 : couldn't connect to server 127.0.0.1:27004, connection attempt failed
+2018-02-28T16:53:44.960+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket closed remotely, no longer connected (idle 25 secs, remote host 127.0.0.1:27005)
+2018-02-28T16:53:44.961+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27005, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:53:44.961+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host 127.0.0.1:27005 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:27005 : couldn't connect to server 127.0.0.1:27005, connection attempt failed
+2018-02-28T16:53:44.961+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set2
+2018-02-28T16:54:00.501+0800 I ASIO     [Uptime reporter] dropping unhealthy pooled connection to 127.0.0.1:28001
+2018-02-28T16:54:00.502+0800 I ASIO     [Uptime reporter] after drop, pool was empty, going to spawn some connections
+2018-02-28T16:54:00.502+0800 I ASIO     [Uptime reporter] Failed to close stream: Socket is not connected
+2018-02-28T16:54:00.502+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T16:54:00.503+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:28001 - HostUnreachable: Connection refused
+2018-02-28T16:54:00.503+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:28001 due to failed operation on a connection
+2018-02-28T16:54:00.503+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28001 as failed :: caused by :: HostUnreachable: Connection refused
+2018-02-28T16:54:00.504+0800 I NETWORK  [Uptime reporter] Socket closed remotely, no longer connected (idle 16 secs, remote host 127.0.0.1:28001)
+2018-02-28T16:54:00.504+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:00.504+0800 I NETWORK  [Uptime reporter] Socket closed remotely, no longer connected (idle 16 secs, remote host 127.0.0.1:28002)
+2018-02-28T16:54:00.504+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:00.505+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28002 as failed :: caused by :: Location40356: connection pool: connect failed 127.0.0.1:28002 : couldn't connect to server 127.0.0.1:28002, connection attempt failed
+2018-02-28T16:54:00.505+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:01.009+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:01.010+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:01.010+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:01.515+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:01.516+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:01.516+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:02.021+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:02.022+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:02.022+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:02.525+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:02.526+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:02.526+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:03.030+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:03.031+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:03.031+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:03.536+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:03.537+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:03.537+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:04.041+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:04.041+0800 I NETWORK  [Uptime reporter] Detected bad connection created at 1519807214819054 microSec, clearing pool for 127.0.0.1:28003 of 0 connections
+2018-02-28T16:54:04.042+0800 I NETWORK  [Uptime reporter] Dropping all pooled connections to 127.0.0.1:28003(with timeout of 5 seconds)
+2018-02-28T16:54:04.042+0800 I NETWORK  [Uptime reporter] Ending connection to host 127.0.0.1:28003(with timeout of 5 seconds) due to bad connection status; 0 connections to that host remain open
+2018-02-28T16:54:04.042+0800 I NETWORK  [Uptime reporter] Marking host 127.0.0.1:28003 as failed :: caused by :: HostUnreachable: network error while attempting to run command 'ismaster' on host '127.0.0.1:28003' 
+2018-02-28T16:54:04.042+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:04.042+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:04.042+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 1 checks in a row.
+2018-02-28T16:54:04.546+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:04.546+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:04.546+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:04.546+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:04.547+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 2 checks in a row.
+2018-02-28T16:54:05.050+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.051+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.051+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.051+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:05.051+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 3 checks in a row.
+2018-02-28T16:54:05.555+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.555+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.555+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:05.555+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:05.555+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 4 checks in a row.
+2018-02-28T16:54:06.059+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.059+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.059+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.059+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:06.060+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 5 checks in a row.
+2018-02-28T16:54:06.565+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.566+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.566+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:06.566+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:06.567+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 6 checks in a row.
+2018-02-28T16:54:07.071+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.072+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.072+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.072+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:07.072+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 7 checks in a row.
+2018-02-28T16:54:07.577+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.577+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.577+0800 W NETWORK  [Uptime reporter] Failed to connect to 127.0.0.1:28003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T16:54:07.577+0800 W NETWORK  [Uptime reporter] No primary detected for set configset
+2018-02-28T16:54:07.577+0800 I NETWORK  [Uptime reporter] All nodes for set configset are down. This has happened for 8 checks in a row.
+2018-02-28T16:54:07.733+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T16:54:07.735+0800 W SHARDING [signalProcessingThread] error encountered while cleaning up distributed ping entry for kieren.local:30000:1519807214:8485547331262408449 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2018-02-28T16:54:07.735+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:15:56.534+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:15:56.554+0800 I CONTROL  [main] 
+2018-02-28T17:15:56.554+0800 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:15:56.555+0800 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:15:56.555+0800 I CONTROL  [main] 
+2018-02-28T17:15:56.555+0800 I SHARDING [mongosMain] mongos version v3.4.7
+2018-02-28T17:15:56.555+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:15:56.555+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:15:56.555+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:15:56.555+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] db version v3.4.7
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:15:56.556+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:15:56.557+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:15:56.557+0800 I CONTROL  [mongosMain] options: { config: "node1/mongodb.config", net: { bindIp: "127.0.0.1", port: 30000 }, processManagement: { fork: true }, sharding: { configDB: "configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/mongos/node1/log/mongodb.log" } }
+2018-02-28T17:15:56.566+0800 I NETWORK  [mongosMain] Starting new replica set monitor for configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003
+2018-02-28T17:15:56.567+0800 I SHARDING [thread1] creating distributed lock ping thread for process kieren.local:30000:1519809356:-6140389348582531681 (sleeping for 30000ms)
+2018-02-28T17:15:56.570+0800 I NETWORK  [mongosMain] Successfully connected to 127.0.0.1:28003 (1 connections now open to 127.0.0.1:28003 with a 5 second timeout)
+2018-02-28T17:15:56.570+0800 I NETWORK  [shard registry reload] Successfully connected to 127.0.0.1:28001 (1 connections now open to 127.0.0.1:28001 with a 5 second timeout)
+2018-02-28T17:15:56.570+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:28002 (1 connections now open to 127.0.0.1:28002 with a 5 second timeout)
+2018-02-28T17:15:56.571+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:15:56.571+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:15:56.571+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:15:56.573+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 2ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T17:15:56.573+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 2ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:15:56.573+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 2ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T17:15:56.573+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:15:56.574+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:15:56.575+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:15:56.577+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:15:56.578+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:15:56.580+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:15:56.582+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:15:56.583+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:15:56.599+0800 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2018-02-28T17:15:58.576+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28002
+2018-02-28T17:15:58.577+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28002, took 1ms (1 connections now open to 127.0.0.1:28002)
+2018-02-28T17:16:01.516+0800 I NETWORK  [thread2] waiting for connections on port 30000
+2018-02-28T17:17:01.517+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
+2018-02-28T17:17:07.884+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:64374 #1 (1 connection now open)
+2018-02-28T17:17:07.885+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:64374 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:17:34.028+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:17:34.029+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:17:34.030+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:17:34.031+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:17:34.033+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:17:34.034+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-2-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:17:34.037+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:17:34.039+0800 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-3-0] Successfully connected to 127.0.0.1:28001, took 2ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:17:34.041+0800 I NETWORK  [conn1] Successfully connected to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 (1 connections now open to configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003 with a 0 second timeout)
+2018-02-28T17:18:03.905+0800 I ACCESS   [conn1] Unauthorized: enableSharding may only be run against the admin database.
+2018-02-28T17:18:18.451+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T17:18:18.454+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T17:18:18.455+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T17:18:31.808+0800 I SHARDING [conn1] distributed lock 'test' acquired for 'enableSharding', ts : 5a9673e7f942c2a1c05dcb60
+2018-02-28T17:18:31.810+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T17:18:31.812+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T17:18:31.812+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T17:18:31.836+0800 I SHARDING [conn1] distributed lock with ts: 5a9673e7f942c2a1c05dcb60' unlocked.
+2018-02-28T17:20:19.798+0800 I -        [conn1] end connection 127.0.0.1:64374 (1 connection now open)
+2018-02-28T17:27:52.180+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:27:52.183+0800 W SHARDING [signalProcessingThread] error encountered while cleaning up distributed ping entry for kieren.local:30000:1519809356:-6140389348582531681 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2018-02-28T17:27:52.183+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:40:05.647+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:40:06.011+0800 I CONTROL  [main] 
+2018-02-28T17:40:06.011+0800 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:40:06.011+0800 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:40:06.011+0800 I CONTROL  [main] 
+2018-02-28T17:40:06.012+0800 I SHARDING [mongosMain] mongos version v3.4.7
+2018-02-28T17:40:06.012+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:06.012+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:06.012+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:40:06.012+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:40:06.012+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] db version v3.4.7
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:40:06.013+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:40:06.014+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:40:06.014+0800 I CONTROL  [mongosMain] options: { config: "/usr/local/mongo-cluster-sharding/mongos/node1/mongodb.config", net: { bindIp: "127.0.0.1", port: 30000 }, processManagement: { fork: true }, sharding: { configDB: "configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/mongos/node1/log/mongodb.log" } }
+2018-02-28T17:40:06.050+0800 I NETWORK  [mongosMain] Starting new replica set monitor for configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003
+2018-02-28T17:40:06.065+0800 I SHARDING [thread1] creating distributed lock ping thread for process kieren.local:30000:1519810806:4849979525839731643 (sleeping for 30000ms)
+2018-02-28T17:40:06.088+0800 I NETWORK  [mongosMain] Successfully connected to 127.0.0.1:28001 (1 connections now open to 127.0.0.1:28001 with a 5 second timeout)
+2018-02-28T17:40:06.088+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:28002 (1 connections now open to 127.0.0.1:28002 with a 5 second timeout)
+2018-02-28T17:40:06.088+0800 I NETWORK  [replSetDistLockPinger] Successfully connected to 127.0.0.1:28003 (1 connections now open to 127.0.0.1:28003 with a 5 second timeout)
+2018-02-28T17:40:06.089+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:06.089+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:40:06.089+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28002
+2018-02-28T17:40:06.090+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28002, took 1ms (1 connections now open to 127.0.0.1:28002)
+2018-02-28T17:40:06.090+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:40:06.594+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:07.099+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:07.604+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:08.110+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:08.615+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:09.120+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:09.626+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:10.131+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:10.636+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:11.139+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:11.643+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:12.148+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:12.653+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:13.155+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:13.657+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:14.161+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:14.666+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:15.171+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:40:15.171+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T17:40:15.596+0800 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2018-02-28T17:40:15.597+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:40:15.597+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:40:15.598+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27002, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:15.616+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27003, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:15.616+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27001, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:15.617+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set1
+2018-02-28T17:40:15.617+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set set1 are down. This has happened for 1 checks in a row.
+2018-02-28T17:40:15.617+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27005, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:15.618+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:40:15.619+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27004, in(checking socket for error after poll), reason: Connection refused
+2018-02-28T17:40:15.619+0800 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set set2
+2018-02-28T17:40:15.729+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2018-02-28T17:40:15.729+0800 W SHARDING [mongosMain] Error initializing sharding state, sleeping for 2 seconds and trying again :: caused by :: CallbackCanceled: Error loading clusterID :: caused by :: Callback canceled
+2018-02-28T17:40:15.729+0800 W SHARDING [signalProcessingThread] error encountered while cleaning up distributed ping entry for kieren.local:30000:1519810806:4849979525839731643 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2018-02-28T17:40:15.730+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-02-28T17:40:50.899+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T17:40:50.909+0800 I CONTROL  [main] 
+2018-02-28T17:40:50.909+0800 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2018-02-28T17:40:50.909+0800 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T17:40:50.910+0800 I CONTROL  [main] 
+2018-02-28T17:40:50.910+0800 I SHARDING [mongosMain] mongos version v3.4.7
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:40:50.910+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] db version v3.4.7
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 0.9.8zg 14 July 2015
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] allocator: system
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] modules: none
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain] build environment:
+2018-02-28T17:40:50.911+0800 I CONTROL  [mongosMain]     distarch: x86_64
+2018-02-28T17:40:50.912+0800 I CONTROL  [mongosMain]     target_arch: x86_64
+2018-02-28T17:40:50.912+0800 I CONTROL  [mongosMain] options: { config: "/usr/local/mongo-cluster-sharding/mongos/node1/mongodb.config", net: { bindIp: "127.0.0.1", port: 30000 }, processManagement: { fork: true }, sharding: { configDB: "configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003" }, systemLog: { destination: "file", logAppend: true, path: "/usr/local/mongo-cluster-sharding/mongos/node1/log/mongodb.log" } }
+2018-02-28T17:40:50.923+0800 I NETWORK  [mongosMain] Starting new replica set monitor for configset/127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003
+2018-02-28T17:40:50.924+0800 I SHARDING [thread1] creating distributed lock ping thread for process kieren.local:30000:1519810850:4112969277457416544 (sleeping for 30000ms)
+2018-02-28T17:40:50.925+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:28001 (1 connections now open to 127.0.0.1:28001 with a 5 second timeout)
+2018-02-28T17:40:50.925+0800 I NETWORK  [shard registry reload] Successfully connected to 127.0.0.1:28002 (1 connections now open to 127.0.0.1:28002 with a 5 second timeout)
+2018-02-28T17:40:50.925+0800 I NETWORK  [mongosMain] Successfully connected to 127.0.0.1:28003 (1 connections now open to 127.0.0.1:28003 with a 5 second timeout)
+2018-02-28T17:40:50.926+0800 W NETWORK  [mongosMain] No primary detected for set configset
+2018-02-28T17:40:50.926+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28002
+2018-02-28T17:40:50.926+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28003
+2018-02-28T17:40:50.927+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28002, took 1ms (1 connections now open to 127.0.0.1:28002)
+2018-02-28T17:40:50.928+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28003, took 2ms (1 connections now open to 127.0.0.1:28003)
+2018-02-28T17:40:51.428+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:51.930+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:52.433+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:52.937+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:53.440+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:53.945+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:54.450+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:54.954+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:55.459+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:55.961+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:56.465+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:56.970+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:57.473+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:57.978+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:58.483+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:58.988+0800 W NETWORK  [replSetDistLockPinger] No primary detected for set configset
+2018-02-28T17:40:59.493+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:40:59.494+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (1 connections now open to 127.0.0.1:28001)
+2018-02-28T17:41:00.931+0800 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2018-02-28T17:41:00.931+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set1/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+2018-02-28T17:41:00.931+0800 I NETWORK  [shard registry reload] Starting new replica set monitor for set2/127.0.0.1:27004,127.0.0.1:27005,127.0.0.1:27006
+2018-02-28T17:41:00.932+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27001 (1 connections now open to 127.0.0.1:27001 with a 5 second timeout)
+2018-02-28T17:41:00.933+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27002 (1 connections now open to 127.0.0.1:27002 with a 5 second timeout)
+2018-02-28T17:41:00.934+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27003 (1 connections now open to 127.0.0.1:27003 with a 5 second timeout)
+2018-02-28T17:41:00.943+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27004 (1 connections now open to 127.0.0.1:27004 with a 5 second timeout)
+2018-02-28T17:41:00.944+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27005 (1 connections now open to 127.0.0.1:27005 with a 5 second timeout)
+2018-02-28T17:41:00.945+0800 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to 127.0.0.1:27006 (1 connections now open to 127.0.0.1:27006 with a 5 second timeout)
+2018-02-28T17:41:04.156+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:28001
+2018-02-28T17:41:04.157+0800 I NETWORK  [thread2] waiting for connections on port 30000
+2018-02-28T17:41:04.157+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to 127.0.0.1:28001, took 1ms (2 connections now open to 127.0.0.1:28001)
+2018-02-28T17:41:04.266+0800 I NETWORK  [thread2] connection accepted from 127.0.0.1:51045 #1 (1 connection now open)
+2018-02-28T17:41:04.266+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:51045 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.7" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "15.3.0" } }
+2018-02-28T17:41:16.033+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to 127.0.0.1:27001
+2018-02-28T17:41:16.035+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Failed to connect to 127.0.0.1:27001 - NoShardingEnabled: Cannot accept sharding commands if not started with --shardsvr
+2018-02-28T17:41:16.035+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Dropping all pooled connections to 127.0.0.1:27001 due to failed operation on a connection
+2018-02-28T17:42:04.162+0800 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host 127.0.0.1:28001 because the pool meets constraints; 1 connections to that host remain open
